@@ -1,0 +1,74 @@
+.main-material_page {
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(248, 240, 240);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+}
+
+.icon>svg {
+  width: 100%;
+  height: 100%;
+}
+
+.content__navigation {
+  margin-right: 36px;
+  max-height: 32px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.content__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: .1px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  color: #7e919f;
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  height: 300px;
+  width: 50%;
+  margin: 4% 5% 0;
+  /* Should be removed. Only for demonstration */
+}
+
+.primer {
+  padding-left: 8px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4% 5% 0;
+  height: 20px;
+  width: 100%;
+}
+
+h2 {
+  padding-left: 5%;
+  font-size: 2rem;
+}

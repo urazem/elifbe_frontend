@@ -1,0 +1,165 @@
+<div class="main">
+  <div class="container">
+    <div class="application__content-inner">
+      <div class="learn-main-view">
+        <div class="learn-page">
+          <div class="learn-main">
+            <h1><span>Тренировки</span></h1>
+            <div class="learn-main__columns">
+              <div class="learn-main__column">
+                <div class="learn-main__header-with-filter">
+                  <div class="card-group_elifbe">
+                    <div class="card-group__label">
+                      <span>Словарные тренировки</span>
+                    </div>
+                  </div>
+                  <div class="horizontal-buttons">
+                    <div class="select">
+                      <div class="select__input">
+                        <div class="input-wrapper">
+                          <input type="text" readonly="" autocomplete="off" class="input" value="Все слова">
+                        </div>
+                        <div class="select__input__chevron">
+                          <div class="select__input__chevron__item select__input__chevron__item__m-up"><span
+                              class="icon icon__m-size-medium"
+                              style="width: 24px; height: 24px; color: rgb(0, 0, 0);"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                  d="M15.484 12.452c-.436.446-1.043.481-1.576 0L10 8.705l-3.908 3.747c-.533.481-1.141.446-1.574 0-.436-.445-.408-1.197 0-1.615.406-.418 4.695-4.502 4.695-4.502a1.095 1.095 0 0 1 1.576 0s4.287 4.084 4.695 4.502c.409.418.436 1.17 0 1.615z"
+                                  fill="currentColor"></path>
+                              </svg></span>
+                          </div>
+                          <div class="select__input__chevron__item select__input__chevron__item__m-down"><span
+                              class="icon icon__m-size-medium"
+                              style="width: 24px; height: 24px; color: rgb(0, 0, 0);"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                  d="M4.516 7.548c.436-.446 1.043-.481 1.576 0L10 11.295l3.908-3.747c.533-.481 1.141-.446 1.574 0 .436.445.408 1.197 0 1.615-.406.418-4.695 4.502-4.695 4.502a1.095 1.095 0 0 1-1.576 0S4.924 9.581 4.516 9.163c-.409-.418-.436-1.17 0-1.615z"
+                                  fill="currentColor"></path>
+                              </svg></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select__options">
+                        <div class="select-option select-option__m-selected">Все слова</div>
+                        <div class="select-option">Одежда и обувь</div>
+                        <div class="select-option">Словарь для среднего уровня (intermediate)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngFor="let item of exercises" class="card w-50">
+                  <img src="{{item.imgUrl}}" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.exerciseName}}</h5>
+                    <a [routerLink]="['/training/', item.pathName]" routerLinkActive="router-link-active"
+                      class="btn btn-primary">Тренировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="learn-main__column">
+                <div class="card-group_elifbe ">
+                  <div class="card-group__label"><span>Грамматические тренировки</span><a class="header-button"
+                      href="#">Все<span class="icon icon__m-size-medium"
+                        style="width: 24px; height: 24px; color: rgb(37, 130, 231);"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path fill="currentColor" fill-rule="evenodd"
+                            d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                        </svg></span></a></div>
+                  <div class="card-group__block"></div>
+                </div>
+                <div class=" kit-layer">
+                  <div class="trainings-block">
+                    <div class=" trainings-block__body">
+                      <div class="trainings-block__items"><a class="trainings-block__item" href="#"><i
+                            class="trainings-block__item-icon trainings-block__item-icon-beginner"></i>
+                          <div class="trainings-block__item-inner">
+                            <div class="trainings-block__item-title"><span>Для начинающего уровня</span></div>
+                            <div class="trainings-block__item-volume"><span>12 тем</span></div>
+                          </div>
+                        </a><a class="trainings-block__item" href="/ru/grammar/rules#middle"><i
+                            class="trainings-block__item-icon trainings-block__item-icon-middle"></i>
+                          <div class="trainings-block__item-inner">
+                            <div class="trainings-block__item-title"><span>Для среднего уровня</span></div>
+                            <div class="trainings-block__item-volume"><span>29 тем</span></div>
+                          </div>
+                        </a><a class="trainings-block__item" href="/ru/grammar/rules#advanced"><i
+                            class="trainings-block__item-icon trainings-block__item-icon-advanced"></i>
+                          <div class="trainings-block__item-inner">
+                            <div class="trainings-block__item-title"><span>Для продвинутого уровня</span></div>
+                            <div class="trainings-block__item-volume"><span>21 тема</span></div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-group_elifbe ">
+                  <div class="card-group__label"><span>Чтение</span></div>
+                  <div class="card-group__block"></div>
+                </div>
+                <div class="learn-main__on-tablet_true learn-main__card-block">
+                  <div class="kit-layer"><a class=" training-card__top-link" href="/ru/trainings/reading/fithe-gaps">
+                      <div class="
+               training-card  training-card__wide  training-card__cover training-card__set-word 
+            " style="background-color: rgb(197, 99, 98);">
+                        <div class="training-card__title">Расставь слова</div>
+                        <div class="training-card__info-icon"></div>
+                        <div class="training-card__hint " style="background-color: rgb(197, 99, 98);">
+                          <div class="training-card__hint-description">Развивает скорость чтения и восприятие
+                            прочитанного</div>
+                          <div class="training-card__hint-skills"><span class="training-card__hint-skills-icon"
+                              data-icon="grammar"></span><span class="training-card__hint-skills-icon"
+                              data-icon="reading"></span><span class="training-card__hint-skills-icon"
+                              data-icon="vocabulary"></span></div>
+                        </div>
+                      </div>
+                    </a></div>
+                </div>
+                <div class="learn-main__on-tablet_true learn-main__card-block">
+                  <div class="kit-layer"><a class="training-card__top-link">
+                      <div class="
+              training-card training-card__normal training-card__cover training-card__sentence 
+            " style="background-color: rgb(59, 101, 165);">
+                        <div class="training-card__title">Восстанови историю</div>
+                        <div class="training-card__info-icon"></div>
+                        <div class="training-card__premium-icon"></div>
+                        <div class="training-card__hint " style="background-color: rgb(59, 101, 165);">
+                          <div class="training-card__hint-description">Развивает скорость чтения и восприятие
+                            прочитанного</div>
+                          <div class="training-card__hint-skills"><span class="training-card__hint-skills-icon"
+                              data-icon="grammar"></span><span class="training-card__hint-skills-icon"
+                              data-icon="reading"></span><span class="training-card__hint-skills-icon"
+                              data-icon="vocabulary"></span></div>
+                        </div>
+                      </div>
+                    </a></div>
+                </div>
+                <div class="learn-main__on-tablet_true learn-main__card-block">
+                  <div class="kit-layer"><a class="training-card__top-link">
+                      <div class="
+              training-card training-card__normal training-card__cover training-card__set-spaces 
+            " style="background-color: rgb(76, 166, 119);">
+                        <div class="training-card__title">Расставь пробелы</div>
+                        <div class="training-card__info-icon"></div>
+                        <div class="training-card__premium-icon"></div>
+                        <div class="training-card__hint " style="background-color: rgb(76, 166, 119);">
+                          <div class="training-card__hint-description">Развивает скорость чтения и восприятие
+                            прочитанного</div>
+                          <div class="training-card__hint-skills"><span class="training-card__hint-skills-icon"
+                              data-icon="grammar"></span><span class="training-card__hint-skills-icon"
+                              data-icon="reading"></span><span class="training-card__hint-skills-icon"
+                              data-icon="vocabulary"></span></div>
+                        </div>
+                      </div>
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

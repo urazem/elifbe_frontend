@@ -1,0 +1,66 @@
+<div style="height: 2px; background-color: rgb(40, 195, 138);" [ngStyle]="{'width': myWidth +'%'}"
+  class="LearnWordTranslate__progress-bar"></div>
+<div class="main">
+  <div class="TrainingActionBar__title">
+    <div class="TrainingActionBar__heading">Конструктор слов<button
+        class="button button__m-color-white button__m-size-default TrainingActionBar__btn-info"><span
+          class="button__content"><span class="icon icon__m-size-custom "
+            style="width: 16px; height: 16px; color: rgb(204, 212, 220);"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="8" cy="8" r="7.5" stroke="currentColor" opacity=".3"></circle>
+                <path fill="currentColor" fiopacity=".3" d="M7 7h2v5H7zm0-3h2v2H7z"></path>
+              </g>
+            </svg></span></span></button></div>
+    <div class="TrainingActionBar__description"><span>Словарная тренировка</span></div>
+  </div>
+  <div class="content">
+    <h2 class="title" *ngIf="originalWord">{{originalWord.original}}</h2>
+    <br>
+    <div *ngIf="displayImage && correct || !displayImage" class="answer__title"
+      [ngClass]="{'answer__title-correct': correct}">
+      <ul>
+        <li *ngFor="let item of newArray">
+          <strong>{{item}}</strong>
+        </li>
+      </ul>
+    </div><br>
+    <div *ngIf="!correct && displayImage" class="answer__title"
+      [ngClass]="{'answer__title-wrong': !correct && displayImage}">
+      <strong>{{originalWord.translated}}</strong>
+    </div><br>
+    <div class="characters">
+      <ul [ngClass]="{'character_block': displayImage}">
+        <li *ngFor="let item of characters; let i = index">
+          <div class="character" [ngStyle]="{'display': clickedItem.indexOf(item)== -1 ? 'block' :'none'}"
+            (click)="click(item)">
+            <strong>
+              {{item}}</strong>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="image__content" *ngIf="displayImage">
+      <div style="background-image: url({{originalWord.imageUrl}});" class="WordTranslateQuestion__pic">
+      </div>
+      <div class="context-title">
+        <span>Контекст
+        </span>
+      </div>
+      <div class="context-text">{{originalWord.description}}</div>
+    </div>
+    <div [ngClass]="{'content_with_image': displayImage}" class="content__bottom"> <button *ngIf="displayImage"
+        class="next__button" (click)="next(words)">Далее →</button>
+      <button *ngIf="!displayImage" class=" next__button button_notknow" (click)="displayImage = true">Не знаю</button>
+    </div>
+
+  </div>
+  <div class="btn-exit" (click)=exit()><span class="btn_content"><span class="icon "
+        style="width: 20px; height: 20px; color: rgb(126, 145, 159);"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 12 12">
+          <path fill="currentColor"
+            d="M.974 0L0 .974 5.026 6 0 11.026.974 12 6 6.974 11.026 12l.974-.974L6.974 6 12 .974 11.026 0 6 5.026z">
+          </path>
+        </svg></span></span></div>
+</div>

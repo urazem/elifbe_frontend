@@ -1,0 +1,180 @@
+<div class="application__content-inner application__content-inner__m-with-sidebar">
+  <div class="jungle-main__block">
+    <div class="jungle-main__header">
+      <h1><span>Главная</span></h1>
+    </div>
+    <div class="jungle-main__body ">
+      <div>
+        <div class="kit-layer">
+          <div class="card-group_elifbe ">
+            <div class="card-group_elifbe ">
+              <div class="card-group__label"><span>Рекомендации для тебя</span><a class="header-button"
+                  href="/ru/jungle/recommended">Все<span class="icon icon__m-size-medium"
+                    style="width: 24px; height: 24px; color: rgb(37, 130, 231);"><svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24">
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z">
+                      </path>
+                    </svg></span></a></div>
+              <div class="card-group__block">
+                <div>
+                  <div class="kit-layer">
+                    <div class="slider">
+                      <div class="slider__wrapper">
+                        <div class="slider__container">
+                          <div class="slider__moveable" [ngStyle]="{'left': left}">
+                            <div class="kit-layer">
+                              <div class="card-set">
+                                <ul class="card-set__items card-set__items__m-single-row">
+                                  <li *ngFor="let item of materials" class="dashboard-materials-item"
+                                    [routerLink]="['/material-page', item.name]">
+                                    <app-material [material]="item">
+                                    </app-material>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__dots">
+                          <span (click)="slide(1)" class="slider__dot "
+                            [class.slider__dot--active]="!dotsClicked && indexDot==1"></span>
+                          <span (click)="slide(2)" class="slider__dot "
+                            [class.slider__dot--active]="!dotsClicked && indexDot==2"></span>
+                          <span (click)="slide(3)" class="slider__dot "
+                            [class.slider__dot--active]="!dotsClicked && indexDot==3"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jungle-main__body ">
+      <div>
+        <div class="kit-layer">
+          <div class="card-group_elifbe">
+            <div class="card-group_elifbe">
+              <div class="card-group__label"><span>Коллекции</span></div>
+              <div class="card-group__block">
+                <div>
+                  <div class="kit-layer">
+                    <div class="slider">
+                      <div class="slider__wrapper">
+                        <div class="slider__container">
+                          <div class="slider__moveable">
+                            <div class="kit-layer">
+                              <div class="card-set">
+                                <ul class="card-set__items card-set__items__m-single-row">
+                                  <li>
+                                    <div class="kit-layer">
+                                      <div class="card card__cover card__horizontal card__collection card__material   "
+                                        data-src="card">
+                                        <div class="card__background"
+                                          style="background-image: url(&quot;https://i.ibb.co/LzTYwPp/Group-green.png&quot;);">
+                                        </div>
+                                        <div class="card__body">
+                                          <div class="card__header">
+                                            <h2 class="card__title" style="font-weight: 600;">Elifbe</h2>
+                                          </div>
+                                          <div class="card__info hidden"></div>
+                                          <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="kit-layer">
+                                      <div class="card card__cover card__horizontal card__collection card__material   "
+                                        data-src="card">
+                                        <div class="card__background"
+                                          style="background-image: url(&quot;https://i.ibb.co/jkpLfbv/black-and-white-production-scene-take-tool-918281.jpg&quot;);">
+                                        </div>
+                                        <div class="card__body">
+                                          <div class="card__header">
+                                            <h2 class="card__title" style="font-weight: 600;">Фильмы</h2>
+                                          </div>
+                                          <div class="card__info hidden"></div>
+                                          <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="kit-layer">
+                                      <div class="card card__cover card__horizontal card__collection card__material   "
+                                        data-src="card">
+                                        <div class="card__background"
+                                          style="background-image: url(&quot;https://i.ibb.co/LNZ0G6X/blurred-book-book-pages-literature-46274.jpg&quot;);">
+                                        </div>
+                                        <div class="card__body">
+                                          <div class="card__header">
+                                            <h2 class="card__title" style="font-weight: 600;">
+                                              Изучаем крымскотатарский язык</h2>
+                                          </div>
+                                          <!-- <p style="color: #fff">Usnie Ganieva</p> -->
+                                          <div class="card__info hidden"></div>
+                                          <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="kit-layer">
+                                      <div class="card card__cover card__horizontal card__collection card__material   "
+                                        data-src="card">
+                                        <div class="card__background"
+                                          style="background-image: url(&quot;https://cdn.pixabay.com/photo/2017/06/07/13/40/ramadan-2380407_960_720.jpg&quot;);">
+                                        </div>
+                                        <div class="card__body">
+                                          <div class="card__header">
+                                            <h2 class="card__title" style="font-weight: 600;">История крымских татар
+                                            </h2>
+                                          </div>
+                                          <div class="card__info hidden"></div>
+                                          <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kit-layer">
+      <div class="remove-cont-modal">
+        <div class="modal" style="display: none;" id="modal-layout">
+          <div class="modal__header">
+            <div class="modal__close" id="modal-close"></div>
+          </div>
+          <div class="modal__body">
+            <div class="remove-cont-modal__item">
+              <p><span>Ты точно хочешь удалить этот материал с изучения?</span></p><button
+                class="cancel"><span>Отмена</span></button><button><span>Удалить материал</span></button>
+            </div>
+          </div>
+          <div class="modal__footer">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

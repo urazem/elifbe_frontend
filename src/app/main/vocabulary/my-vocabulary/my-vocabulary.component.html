@@ -1,0 +1,88 @@
+<div class="application__content-inner">
+  <div class="my-vocabulary-main__block">
+    <h2 class="title">Мой словарь</h2>
+    <div>
+      <div class="sets-words">
+        <div *ngFor="let item of words" class="card-word">
+          <div class="sets-words__col sets-words__col_sound">
+            <div (click)="soundPlay('https://audiocdn.lingualeo.com/v2/0/174038-631152000.mp3')"
+              class="sets-words__sound">
+              <audio src="https://audiocdn.lingualeo.com/v2/0/174038-631152000.mp3"></audio><span
+                class="icon icon__m-size-large" style="width: 32px; height: 32px; color: rgb(126, 145, 159);"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h32v32H0z"></path>
+                    <path fill="currentColor"
+                      d="M15.788 13.007a3 3 0 1 1 0 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z">
+                    </path>
+                  </g>
+                </svg></span></div>
+          </div>
+          <div class="sets-words__col sets-words__col_word     
+        sets-words__col_word-phrase"><strong class="sets-words__my-word cap-first"> {{item.translated}} </strong><span
+              class="sets-words__my-word-translate">{{item.original}}</span></div>
+          <div class="sets-words__col sets-words__col_image">
+            <div class="sets-words__word-image-container ">
+              <div class="sets-words__word-image" style="background-image: url({{item.imageUrl}});"></div>
+            </div>
+          </div>
+          <div class="sets-words__col sets-words__col_remove">
+            <div class="sets-words__remove false"><span class="icon icon__m-size-medium"
+                style="width: 24px; height: 24px; color: rgb(126, 145, 159);"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" fill-rule="nonzero"
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                  </g>
+                </svg></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="sets-words">
+        <div class="card_view">
+          <div class="card_image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template *ngIf="true" #cardWord>
+
+  <div class="word-card__detailed">
+    <div class="word-card__image">
+      <div class="word-card__image-content" style="background-image: url(&quot;&quot;);">
+        <div>
+          <div class="word-card__image-btn-upload"><span class="icon icon__m-size-custom word-card__upload-btn-icon"
+              style="width: 16px; height: 16px; color: rgb(255, 255, 255);"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 14">
+                <g fill="currentColor" fill-rule="evenodd">
+                  <path
+                    d="M4 1.75L5.314 0h5.333l1.334 1.75h2.658c.752 0 1.361.61 1.361 1.36v9.53c0 .75-.61 1.36-1.36 1.36H1.36A1.36 1.36 0 010 12.64V3.11c0-.75.61-1.36 1.36-1.36H4zm4 10.063c2.21 0 4-1.763 4-3.938 0-2.175-1.79-3.938-4-3.938S4 5.7 4 7.876c0 2.175 1.79 3.938 4 3.938z">
+                  </path>
+                  <circle cx="8" cy="8" r="2"></circle>
+                </g>
+              </svg></span>
+          </div>
+        </div>
+      </div>
+      <div class="word-card__content">
+        <div class="word-card__title">break up</div>
+        <div class="word-card__speech">
+          <div class="word-card__audio"><audio src="https://audiocdn.lingualeo.com/v2/0/173560-631152000.mp3"></audio>
+          </div>
+          <div class="word-card__transcription">[breɪk ʌp]</div>
+        </div>
+        <div class="kit-layer">
+          <div class="word-card__translation word-card__translation__m-current">
+            <div class="word-card__translation-current-item"><span>прекращать</span><span
+                class="word-card__translation-delete-icon" data-btn="true"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="kit-layer">
+        <div class="word-card__translation word-card__translation__m-my"></div>
+      </div>
+    </div>
+  </div>
+</ng-template>

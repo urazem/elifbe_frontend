@@ -1,0 +1,1048 @@
+.application__content__m-no-background {
+  position: static;
+  background: none;
+
+}
+
+
+.application__content-inner {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+}
+
+.learn-main-view {
+  height: 100%;
+}
+
+.learn-page {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-wrap: wrap;
+}
+
+.LearnWordTranslate {
+  padding: 30px 32px 100px;
+}
+
+.LearnWordTranslate {
+  width: 100%;
+  padding: 18px 16px 16px;
+  box-sizing: border-box;
+}
+
+.LearnWordTranslate__progress-bar {
+  top: 64px;
+}
+
+.LearnWordTranslate__progress-bar {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+
+
+.TrainingActionBar {
+  margin-bottom: 8px;
+}
+
+.TrainingActionBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+.TrainingActionBar__title {
+  display: none;
+  flex-grow: 1;
+  position: relative;
+  top: 3px;
+  line-height: 15px;
+}
+
+.TrainingActionBar__title {
+  display: block;
+}
+
+.TrainingActionBar__title {
+  flex: 0 1;
+  margin-bottom: 8px;
+}
+
+.TrainingActionBar__heading {
+  padding-top: 11px;
+}
+
+.TrainingActionBar__heading {
+  display: block;
+  padding-top: 2px;
+}
+
+.TrainingActionBar__heading {
+  padding-top: 5px;
+  padding-bottom: 12px;
+  color: #37383c;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .44px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.TrainingActionBar__btn-info {
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  margin-left: 13px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.button,
+.button__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.43;
+}
+
+.button {
+  height: 40px;
+  position: relative;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all .3s ease-out;
+  box-shadow: 0 2px 4px rgba(34, 41, 67, .14);
+  box-sizing: border-box;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  margin-left: 0px;
+}
+
+.TrainingActionBar__btn-info .button__content {
+  min-width: auto;
+}
+
+.button__content {
+  min-width: 124px;
+  color: inherit;
+  text-transform: inherit;
+}
+
+.button,
+.button__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.43;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+}
+
+.icon>svg {
+  width: 100%;
+  height: 100%;
+}
+
+.TrainingActionBar__description {
+  color: #7e919f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+.TrainingActionBar__controls {
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  align-items: center;
+}
+
+.TrainingActionBar__controls {
+  justify-content: flex-end;
+}
+
+.TrainingActionBar__checkboxes {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.TrainingActionBar__checkboxes {
+  flex-grow: 0;
+  flex-direction: row;
+}
+
+
+
+.TrainingActionBar .checkbox {
+  height: 16px;
+}
+
+.checkbox__label {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.checkbox__input {
+  display: none;
+}
+
+
+.checkbox__box {
+  color: red;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0;
+  border: 2px solid rgba(55, 56, 60, .15);
+  box-sizing: border-box;
+  transition: all 225ms ease;
+}
+
+.TrainingActionBar__checkboxes .checkbox__box {
+  flex-shrink: 0;
+}
+
+.checkbox__input:checked+.checkbox__box {
+  border: 2px solid #2582e7;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-width: 8px;
+}
+
+.checkbox__input:checked+.checkbox__box+.checkbox__icon {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.checkbox__icon {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 0;
+  height: 0;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTIgMTEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjYgKDY3NDkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5QYXRoIDk8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0i0JTQttGD0L3Qs9C70LgiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLQlNC20YPQvdCz0LvQuC3QnNC+0Lgt0JzQsNGC0LXRgNC40LDQu9GLLdCU0L7QsdCw0LLQuNGC0YwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zODkuMDAwMDAwLCAtMzYwLjAwMDAwMCkiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiPgogICAgICAgICAgICA8ZyBpZD0iY29tcG9uZW50cy0vLWNoZWNrYm94LS8tZGVmYXVsdC1jb3B5LTI4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODUuMDAwMDAwLCAzNTUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtOSIgcG9pbnRzPSI1IDEwIDguNzUgMTMuNzUgMTUgNi4yNSI+PC9wb2x5bGluZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 525ms ease;
+}
+
+.TrainingActionBar .checkbox__title {
+  font-size: 12px;
+  color: #7e919f;
+  line-height: 16px;
+}
+
+.checkbox__title,
+.checkbox__tooltip {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.checkbox__title {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.14;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.TrainingActionBar__progress {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #7e919f;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.TrainingActionBar__progress {
+  width: 53px;
+  margin-right: 40px;
+  margin-left: 28px;
+  padding: 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+.TrainingActionBar__progress {
+  margin-right: 0;
+}
+
+.TrainingActionBar__exit {
+  display: flex;
+  flex: 0 1 calc(50vw - 412px);
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.TrainingActionBar__btn-exit {
+  width: 40px;
+  padding: 0;
+  background-color: #f4f6f7;
+  box-shadow: none;
+  transition: background-color .3s ease-out;
+}
+
+.button,
+.button__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.43;
+}
+
+.button {
+  height: 40px;
+  position: relative;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all .3s ease-out;
+  box-shadow: 0 2px 4px rgba(34, 41, 67, .14);
+  box-sizing: border-box;
+}
+
+.TrainingActionBar__btn-info {
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  margin-left: 13px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.TrainingActionBar__btn-exit .button__content {
+  min-width: unset;
+}
+
+.button__content {
+  min-width: 124px;
+  color: inherit;
+  text-transform: inherit;
+}
+
+
+.TrainingActionBar__exit {
+  display: flex;
+  flex: 0 1 calc(50vw - 412px);
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.TrainingActionBar__btn-exit {
+  width: 40px;
+  padding: 0;
+  background-color: #f4f6f7;
+  box-shadow: none;
+  transition: background-color .3s ease-out;
+}
+
+
+.LearnWordTranslate__plate-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.LearnWordTranslate__plate-wrapper {
+  border: 1px solid #e6e9ee;
+}
+
+.LearnWordTranslate * {
+  box-sizing: border-box;
+}
+
+
+.LearnWordTranslate__plate {
+  position: relative;
+}
+
+.LearnWordTranslate__plate {
+  display: flex;
+  padding: 28px 28px 24px;
+  background-color: #fff;
+}
+
+.LearnWordTranslate__paw {
+  display: none;
+}
+
+.LearnWordTranslate__paw {
+  cursor: pointer;
+}
+
+.LearnWordTranslate__paw {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.PawIcon__tooltip {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 18px 7px;
+}
+
+.PawIcon__tooltip {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  text-transform: none;
+  white-space: nowrap;
+  background-color: #37383c;
+  border-radius: 8px;
+  z-index: 5;
+}
+
+
+.LearnWordTranslate__paw {
+  display: none;
+}
+
+.ButtonSound {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.LearnWordTranslate__sound {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 10;
+}
+
+.LearnWordTranslate__sound {
+  top: 16px;
+  right: auto;
+  left: 16px;
+}
+
+
+
+.ButtonSound .button__content {
+  position: absolute;
+  min-width: auto;
+  width: 36px;
+  height: 36px;
+  top: 1px;
+  left: 1px;
+  margin: -1px;
+}
+
+.WordTranslateQuestion {
+  position: relative;
+  min-height: 144px;
+  border: 1px solid #e6e9ee;
+  text-align: center;
+}
+
+.WordTranslateQuestion {
+  flex-grow: 1;
+  height: auto;
+  min-height: auto;
+  padding-top: 45px;
+  border: none;
+}
+
+.WordTranslateQuestion__text-wrapper {
+  padding: 49px 16px 9px;
+  font-size: 22px;
+  color: #37383c;
+  word-break: break-all;
+}
+
+.WordTranslateQuestion__text-wrapper {
+  padding: 0 0 8px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.WordTranslateQuestion__transcription {
+  padding-bottom: 11px;
+  font-size: 16px;
+  color: #7e919f;
+}
+
+.WordTranslateQuestion__transcription {
+  padding-bottom: 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.WordTranslateQuestion__pic {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #f4f6f7;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.WordTranslateQuestion__pic {
+  display: none;
+  position: static;
+  width: 180px;
+  height: 180px;
+  margin-top: 21px;
+  margin-left: 0;
+}
+
+
+
+.WordTranslateQuestion__context-title {
+  font-size: 14px;
+  color: #7e919f;
+}
+
+.WordTranslateQuestion__context-text {
+  padding-top: 8px;
+  font-size: 14px;
+  color: #37383c;
+  line-height: 15px;
+}
+
+.WordTranslateQuestion__context {
+  display: none;
+  padding-top: 30px;
+  text-align: left;
+}
+
+/* .WordTranslateQuestion__context {
+    display: block;
+  } */
+
+.TrainingActionBar {
+  margin-bottom: 8px;
+}
+
+.LearnWordTranslate {
+  padding: 30px 32px 100px;
+}
+
+.LearnWordTranslate__choose-answer {
+  display: none;
+}
+
+
+.WordTranslateAnswers {
+  display: flex;
+  flex-direction: column;
+  transition: none;
+}
+
+.WordTranslateAnswers {
+  padding-left: 78px;
+}
+
+.WordTranslateAnswers__answer:first-child {
+  margin-top: 0;
+}
+
+
+
+.WordTranslateAnswers__answer {
+  height: auto;
+  min-height: 40px;
+  margin-top: 12px;
+  padding: 2px 8px;
+  box-shadow: none;
+  color: #37383c;
+  font-size: 14px;
+  text-transform: none;
+  border: 1px solid #e6e9ee;
+  background-color: #f4f6f7;
+  transition-property: color, background-color, border-color;
+}
+
+.WordTranslateAnswers__answer {
+  position: relative;
+  justify-content: left;
+  width: 338px;
+  margin-top: 16px;
+  padding: 11px 30px 12px 20px;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: left;
+}
+
+.WordTranslateAnswers__answer__m-give-up {
+  background-color: #fff;
+}
+
+
+.WordTranslateAnswers__answer__m-correct,
+.WordTranslateAnswers__answer__m-correct:hover {
+  color: #28c38a;
+  background-color: #dcf5eb;
+  border-color: #dcf5eb;
+}
+
+.WordTranslateAnswers__answer__m-wrong,
+.WordTranslateAnswers__answer__m-wrong:hover {
+  color: #ed593b;
+  background-color: #fce4df;
+  border-color: #fce4df;
+}
+
+
+.button[disabled],
+.button__m-disabled {
+  cursor: not-allowed !important;
+}
+
+
+.WordTranslateAnswers__answer:hover {
+  color: #2582e7;
+  background-color: #ebf4fd;
+  border-color: #ebf4fd;
+}
+
+.WordTranslateAnswers__answer__m-disabled,
+.WordTranslateAnswers__answer__m-disabled:hover {
+  color: #37383c;
+  background-color: #f4f6f7;
+}
+
+.WordTranslateAnswers__answer__m-next {
+  color: #fff;
+  background-color: #2582e7;
+  border-color: #2582e7;
+}
+
+.WordTranslateAnswers__answer__m-next {
+  justify-content: center;
+}
+
+.WordTranslateAnswers__answer__m-next:hover {
+  color: #fff;
+  background-color: #2377d1;
+  border-color: #2582e7;
+}
+
+.WordTranslateAnswers__number {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 20px);
+  font-size: 14px;
+  opacity: .7;
+  color: #7e919f !important;
+  transform: translateY(-50%);
+}
+
+.LearnWordTranslate__progress-bar {
+  top: 63px;
+}
+
+.WordTranslateAnswers__answer .button__content {
+  min-width: auto;
+  line-height: 1.2;
+}
+
+
+.TrainingFooter {
+  display: none;
+  min-height: 86px;
+  padding: 18px 28px;
+  background-color: #f5f7f8;
+}
+
+.TrainingFooter {
+  display: flex;
+}
+
+.application__m-with-fixed-header .LearnWordTranslate__progress-bar,
+.LearnWordTranslate .TrainingFooter__btn-delete,
+.WordMix .LearnWordTranslate .TrainingActionBar__btn-info,
+.WordMix .LearnWordTranslate .TrainingActionBar__progress {
+  display: none;
+}
+
+.TrainingFooter__btn-delete {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.TrainingFooter__btn-delete .leokit__button__content {
+  min-width: auto;
+}
+
+.TrainingFooter__r-col {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-left: 28px;
+}
+
+.LearnWordTranslate__r-col-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 338px;
+}
+
+.LearnWordTranslate__result-phrase {
+  font-size: 14px;
+}
+
+.LearnWordTranslate__result-phrase__m-wrong {
+  color: #ed593b;
+}
+
+.LearnWordTranslate__choose-answer__m-correct {
+  color: #28c38a;
+}
+
+.LearnWordTranslate__result {
+  padding-top: 8px;
+  color: #37383c;
+  font-size: 16px;
+}
+
+.LearnWordTranslate .TrainingFooter__r-col .LearnWordTranslate__paw {
+  position: relative;
+  top: auto;
+  right: auto;
+  flex: 0 1 32px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+}
+
+.LearnWordTranslate__paw {
+  cursor: pointer;
+}
+
+.LearnWordTranslate__paw {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.LearnWordTranslate .TrainingFooter__r-col .LearnWordTranslate__paw .icon {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ModalAlt {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: -webkit-fiavailable;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.ModalAlt__backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .64;
+  background-color: #000;
+}
+
+.ModalAlt__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 460px;
+  height: auto;
+  min-height: auto;
+  padding: 20px 28px 28px;
+  border-radius: 8px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, .16);
+  overflow: visible;
+}
+
+.ModalAlt__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: -webkit-fiavailable;
+  padding: 36px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.ModalAlt__close-button {
+  display: block;
+  position: absolute;
+  top: -33px;
+  right: -54px;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.ModalAlt__close-button {
+  display: none;
+  padding: 0;
+}
+
+.ModalAlt__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.TrainingInfoModal__icon {
+  width: 64px;
+  height: auto;
+}
+
+.ModalAlt__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.ModalAlt__buttons .leokit__button {
+  width: auto;
+  height: auto;
+  padding: 8px 11px;
+  font-size: 14px;
+}
+
+.ModalAlt__buttons .leokit__button {
+  width: 100%;
+  height: auto;
+  padding: 14px 8px 13px;
+  box-shadow: none;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.TrainingInfoModal__btn-okay {
+  font-size: 14px;
+  color: #fff;
+  text-transform: none;
+  background-color: #2582e7;
+  box-shadow: none;
+}
+
+.ModalAlt {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: -webkit-fiavailable;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.ModalAlt__backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .64;
+  background-color: #000;
+}
+
+.ModalAlt__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 460px;
+  height: auto;
+  min-height: auto;
+  padding: 20px 28px 28px;
+  border-radius: 8px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, .16);
+  overflow: visible;
+}
+
+.ModalAlt__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: -webkit-fiavailable;
+  padding: 36px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.TrainingExitModal .ModalAlt__content {
+  width: 342px;
+}
+
+.ModalAlt__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalAlt__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.ModalAlt__buttons .leokit__button {
+  width: auto;
+  height: auto;
+  padding: 8px 11px;
+  font-size: 14px;
+}
+
+.ModalAlt__buttons .leokit__button {
+  width: 100%;
+  height: auto;
+  padding: 14px 8px 13px;
+  box-shadow: none;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.TrainingExitModal__btn-proceed {
+  width: 200px !important;
+}
+
+.TrainingExitModal__btn-proceed {
+  margin-bottom: 16px;
+  color: #fff;
+  background-color: #2582e7;
+}
+
+.TrainingExitModal__btn-cancel {
+  padding: 0 !important;
+  text-decoration: underline;
+  color: #2582e7;
+  background-color: transparent;
+}

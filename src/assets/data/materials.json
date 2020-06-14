@@ -1,0 +1,35 @@
+[{
+    "id": "1",
+    "name": "Числа по-крымскотатарски",
+    "rating": "string",
+    "text": "string",
+    "video": "9412ZP7M6ig",
+    "imgUrl": "https://i.ibb.co/sgbJ60P/blue-background-with-text-overlay-1314536.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Грамматика крымскотатарского языка",
+    "rating": "string",
+    "text": "<i>Тиль – акъыл теразесидир.</i> Язык – это мера ума.<br><b>Звук ДЖ</b><br><div class='primer'> Джан – душа<br>Оджа – учитель<br>Аджджы - горький<br></div><b>Звук ГЪ</b><div class='primer'>Дагъ – гора<br>Сагъ -правый<br>Ягъмур – дождь<br></div><b>Звук КЪ</b><div class='primer'>Къар – cytu<br>Къарт – старый<br>Вакъыт - время<br></div><b>Звук НЪ - </b> только в середине слова или в конце<br><div class='primer'>Янъы – новый<br>Манъа – мне<br>Танъ – рассвет<br></div>",
+    "video": "mRIMRWkuWsk",
+    "imgUrl": "https://i.ibb.co/4PK8Nqg/pile-of-books-159866.jpg"
+
+  },
+  {
+    "id": "3",
+    "name": "Крымскотатарская кухня",
+    "rating": "string",
+    "text": "string",
+    "video": "mRIMRWkuWsk",
+    "imgUrl": "https://i.ibb.co/MnCHvvd/assorted-spices-on-brown-wooden-table-beside-red-and-white-1435895.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Множественное число существительных",
+    "rating": "string",
+    "text": "string",
+    "video": "Euq8NA2VAQo",
+    "imgUrl": "https://i.ibb.co/4f188v7/depth-of-field-photograph-of-block-toys-1275235.jpg"
+  }
+
+]

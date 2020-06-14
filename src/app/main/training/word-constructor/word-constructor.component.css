@@ -1,0 +1,273 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+  float: left;
+}
+
+strong {
+  font-size: 1.5em;
+  display: block;
+}
+
+.character {
+  padding: 10px 25px;
+  background-color: rgb(128, 208, 235);
+  border-radius: 7px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.character:active {
+  background-color: rgb(37, 233, 174);
+}
+
+.character-wrong:active {
+  background-color: #ed593b;
+}
+
+.character_block {
+  display: none;
+}
+
+.answer__title {
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  min-width: 28%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.answer__title-wrong {
+  color: #ed593b;
+  background-color: rgb(233, 204, 195);
+}
+
+.answer__title-correct {
+  color: #1c8343;
+  background-color: rgb(195, 233, 196);
+}
+
+.answer__character {
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .08), 0 .5px 1.5px 0 rgba(0, 0, 0, .12);
+}
+
+.LearnWordTranslate__progress-bar {
+  top: 63px;
+}
+
+.WordTranslateQuestion__pic {
+
+  margin-top: 10px;
+  width: 180px;
+  height: 180px;
+  background-color: #f4f6f7;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: center;
+  border: solid rgba(124, 123, 123, 0.333) .5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .08), 0 .5px 1.5px 0 rgba(0, 0, 0, .12);
+  margin: 1% 20% 10%;
+  background-color: #fff;
+}
+
+.title {
+  padding-bottom: 12px;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.characters {
+  display: flex;
+  align-items: center;
+}
+
+.image__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next__button {
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #297CD6;
+  color: white;
+  position: absolute;
+  padding: 8px 28px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+
+
+}
+
+.button_notknow {
+  color: #37383c;
+  background-color: #e5e9ec;
+  box-shadow: none;
+}
+
+.content__bottom {
+  display: flex;
+  background-color: #f5f7f8;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding: 5% 20px 10% 50px;
+  margin-top: 20%;
+  height: 100%;
+}
+
+.content_with_image {
+  margin-top: 3%;
+}
+
+.context-title {
+  margin-top: 2px;
+  padding-bottom: 11px;
+  color: #7e919f;
+  font-size: 14px;
+}
+
+.context-text {
+  color: #37383c;
+  font-size: 14px;
+}
+
+.TrainingActionBar__title {
+  display: none;
+  flex-grow: 1;
+  position: relative;
+  top: 3px;
+  line-height: 15px;
+}
+
+.TrainingActionBar__title {
+  display: block;
+}
+
+.TrainingActionBar__title {
+  flex: 0 1;
+  margin: 20px 20px 0;
+}
+
+.TrainingActionBar__heading {
+  padding-top: 11px;
+}
+
+.TrainingActionBar__heading {
+  display: block;
+  padding-top: 2px;
+}
+
+.TrainingActionBar__heading {
+  padding-top: 5px;
+  padding-bottom: 12px;
+  color: #37383c;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .44px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+
+.button,
+.button__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.43;
+}
+
+.button {
+  height: 40px;
+  position: relative;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all .3s ease-out;
+  box-shadow: 0 2px 4px rgba(34, 41, 67, .14);
+  box-sizing: border-box;
+}
+
+.TrainingActionBar__btn-info {
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  margin-left: 13px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+
+.btn-exit {
+  position: absolute;
+  background-color: #e5e8e9;
+  box-shadow: none;
+  height: 40px;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  margin: 20px 0 0 91%;
+}
+
+.btn_content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.43;
+}

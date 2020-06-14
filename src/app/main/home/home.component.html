@@ -1,0 +1,49 @@
+<div class="app-content">
+  <div class="app-main-view">
+    <div class="dashboard-main">
+      <div class="dashboard-blocks-wrapper">
+        <h1 class="dashboard-title">
+          <span>План на сегодня</span>
+        </h1>
+        <div class="dashboard-blocks">
+          <div class="dashboard-block dashboard-block-trainings">
+            <div class="card-group dashboard-training-items">
+              <div class="card-group-label">
+                <span>Упражнения</span>
+                <a class="header-button" [routerLink]="['/training']">Все</a>
+              </div>
+              <div class="card-group card-group__block">
+                <app-training-block *ngFor="let train of trainings; let i = index" [training]="train"
+                  [color]="colors[i]" class="dashboard-training-item">
+                </app-training-block>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-block dashboard-block-materials">
+          <div class="card-group dashboard-materials-items">
+            <div class="card-group-label">
+              <span>Материалы</span>
+              <a class="header-button" [routerLink]="['/materials']">Все</a>
+            </div>
+            <div class="card-group card-group__block">
+              <div class="slider__wrapper">
+                <div [ngStyle]="{ 'left': slider }" class="slider__container">
+                  <div class="slider__moveable">
+                    <ul class="card-set__items card-set__items__m-single-row">
+                      <li *ngFor="let item of materials" class="dashboard-materials-item"
+                        [routerLink]="['/material-page', item.name]">
+                        <app-material [material]="item">
+                        </app-material>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

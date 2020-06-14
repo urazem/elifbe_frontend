@@ -1,0 +1,26 @@
+<div class="main-material_page">
+  <div class="content__navigation"><a class="content__link" [routerLink]="['/materials']"
+      routerLinkActive="router-link-active">
+      <span class="icon" style="width: 16px; height: 16px; color: rgb(126, 145, 159);"><svg viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" fill-rule="evenodd"></path>
+        </svg></span>
+      вернуться назад
+    </a></div>
+
+  <div class="title">
+    <h3><b> {{materialTitle}}</b></h3><br>
+
+  </div>
+  <div class="content">
+    <div class="column">
+      <div [innerHTML]="material.text"></div>
+
+    </div>
+    <div class="column">
+      <youtube-player [videoId]="material.video" suggestedQuality="small" [height]="340" [width]="450">
+      </youtube-player>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active">
+    <img src="../../../assets/img/brand.png" /></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item nav-home" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active"><span class="item-content">
+            Домой</span><span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/materials']" routerLinkActive="router-link-active">
+          <span class="item-content"> Материалы</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/training']" routerLinkActive="router-link-active"><span
+            class="item-content"> Учиться</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/vocabulary']" routerLinkActive="router-link-active"><span
+            class="item-content"> Словарь</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="avatar dropdown">
+        <a class="nav-link" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img src="https://i.ibb.co/gtMpvpg/noavatar.png" class="rounded-circle z-depth-0" alt="avatar image"
+            height="35" />
+        </a>
+        <div class="elifbe-menu dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+          aria-labelledby="navbarDropdownMenuLink-55">
+          <div class="elifbe-user">
+            <div class="user-image">
+              <img class="image" src="https://i.ibb.co/gtMpvpg/noavatar.png" />
+
+              <div class="image-upload__icon">
+                <input type="file" style="display: none;" #fileInput accept="image/*" (change)="onChangeFileInput()" />
+
+                <a (click)="onClickFileInputButton()" class="upload-image">
+                  <svg class="image-upload-icon" enable-background="new 0 0 24 24" focusable="false" height="26"
+                    viewBox="0 0 24 24" width="18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                      d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H4V7h16v12zM12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div *ngIf="currentUser" class="user-data">
+              <div class="user-data__username">{{currentUser.username}}</div>
+              <div class="user-data__email">{{currentUser.email}}</div>
+            </div>
+          </div>
+          <div class="elifbe-menu__item">
+            <a class="menu-item" [routerLink]="['/profile']" routerLinkActive="router-link-active">
+              <div class="item-label__icon">
+                <svg class="label__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9957 7.32847C12.9957 8.93092 11.6607 10.241 10 10.241C8.33934 10.241 7.00427 8.93092 7.00427 7.32847C7.00427 5.72601 8.33934 4.41596 10 4.41596C11.6607 4.41596 12.9957 5.72601 12.9957 7.32847Z"
+                    stroke="#4A4747" stroke-width="0.5" />
+                  <path
+                    d="M16.2414 14.9018C16.2414 15.1243 16.1316 15.2991 15.8554 15.4493C15.5661 15.6066 15.1251 15.716 14.5429 15.7863C13.5431 15.9071 12.217 15.9043 10.731 15.9012C10.4912 15.9007 10.2474 15.9002 10 15.9002C9.75265 15.9002 9.50876 15.9007 9.26903 15.9012C7.78299 15.9043 6.45689 15.9071 5.45705 15.7863C4.87491 15.716 4.43387 15.6066 4.14456 15.4493C3.86836 15.2991 3.75853 15.1243 3.75853 14.9018C3.75853 14.6467 3.90207 14.3038 4.2188 13.9157C4.5304 13.534 4.98807 13.1356 5.56062 12.7738C6.70583 12.0501 8.28296 11.49 10 11.49C11.717 11.49 13.2942 12.0501 14.4394 12.7738C15.0119 13.1356 15.4696 13.534 15.7812 13.9157C16.0979 14.3038 16.2414 14.6467 16.2414 14.9018Z"
+                    stroke="#413F3F" stroke-width="0.5" />
+                </svg>
+              </div>
+              <div class="item-label__text">Профиль</div>
+            </a>
+          </div>
+          <div class="elifbe-menu__item">
+            <a class="menu-item" [routerLink]="['/progress']" routerLinkActive="router-link-active">
+              <div class="item-label__icon">
+                <svg class="label__icon" enable-background="new 0 0 24 24" focusable="false" height="20"
+                  viewBox="0 0 24 24" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path
+                    d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1zm3-4v-3h-3V9h3V6h2v3h3v2h-3v3h-2z">
+                  </path>
+                </svg>
+              </div>
+              <div class="item-label__text">Мой прогресс</div>
+            </a>
+          </div>
+          <div class="elifbe-menu__item">
+            <a class="menu-item" [routerLink]="['/profile']" routerLinkActive="router-link-active">
+              <div class="item-label__icon">
+                <svg class="label__icon" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.38517 2.76067C7.38517 1.73821 8.21405 0.909332 9.23652 0.909332H11.6854C12.654 0.909332 13.4392 1.69453 13.4392 2.66311V2.95002C13.4392 3.48696 13.772 3.96288 14.2409 4.22448V4.22448C14.7134 4.48808 15.2925 4.51529 15.7505 4.2272L16.1919 3.94952C17.1706 3.33384 18.4629 3.62649 19.0809 4.60372L19.9652 6.00212C20.6425 7.07313 20.3216 8.49054 19.249 9.1653L18.7136 9.50209C18.3005 9.76196 18.081 10.2347 18.081 10.7228V10.7228V10.7228C18.081 11.4659 18.3974 12.2006 19.0337 12.5846L19.3281 12.7623C20.4262 13.4252 20.7775 14.8537 20.1121 15.9503L19.5085 16.9451C18.7761 18.1521 17.2049 18.5385 15.9963 17.8089L15.1891 17.3217C14.8488 17.1163 14.426 17.1264 14.0742 17.3113V17.3113C13.6997 17.5081 13.4392 17.8842 13.4392 18.3072V18.932C13.4392 20.0241 12.5539 20.9093 11.4619 20.9093H9.46369C8.31575 20.9093 7.38517 19.9787 7.38517 18.8308V17.9285C7.38517 17.6645 7.22905 17.4268 6.99562 17.3035V17.3035C6.77079 17.1847 6.49962 17.1856 6.2844 17.321L5.27101 17.9585C4.04732 18.7283 2.43143 18.3624 1.65873 17.1405L1.06954 16.2088C0.383859 15.1246 0.708798 13.6896 1.79469 13.0065L1.92069 12.9272C2.65722 12.4639 3.00372 11.5929 3.00372 10.7228V10.7228V10.7228C3.00372 10.2732 2.79472 9.84011 2.40987 9.60781L1.67439 9.16385C0.477937 8.44164 0.0951579 6.88526 0.820142 5.69049L1.40755 4.72245C2.08927 3.59897 3.55173 3.2393 4.67678 3.91841L5.35853 4.32993C5.77143 4.57917 6.28756 4.54861 6.70362 4.30468V4.30468C7.1062 4.06865 7.38517 3.65102 7.38517 3.18436V2.76067ZM10.4511 14.7427C12.7159 14.7427 14.5519 13.0264 14.5519 10.9093C14.5519 8.79223 12.7159 7.07598 10.4511 7.07598C8.18627 7.07598 6.35028 8.79223 6.35028 10.9093C6.35028 13.0264 8.18627 14.7427 10.4511 14.7427Z" />
+
+                </svg>
+              </div>
+              <div class="item-label__text">Настройки</div>
+            </a>
+          </div>
+          <div class="user-menu-button ">
+            <a class="logout-button" [routerLink]="['/login']" routerLinkActive="router-link-active"
+              (click)="logout()">Выход</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

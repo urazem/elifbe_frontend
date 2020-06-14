@@ -1,0 +1,576 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.application__content-inner {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+}
+
+.learn-main-view {
+  height: 100%;
+}
+
+.learn-page {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-wrap: wrap;
+}
+
+.learn-main {
+  display: block;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.learn-page h1 {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: .4px;
+  color: #37383c;
+  text-transform: uppercase;
+  margin: auto 0;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
+}
+
+.learn-main__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.learn-main__column {
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.learn-main__header-with-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+}
+
+.learn-main__header-with-filter .card-group_elifbe {
+  min-width: 50%;
+}
+
+.learn-main .card-group_elifbe {
+  height: 50px;
+  width: 100%;
+}
+
+.learn-main .card-group__label {
+  margin-top: 4px;
+}
+
+.card-group__label {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #37383c;
+  height: 32px;
+  padding: 0 10px;
+}
+
+.learn-page .horizontal-buttons .select {
+  min-width: 170px;
+}
+
+.select {
+  position: relative;
+}
+
+.select__input {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.learn-page .horizontal-buttons .select .input {
+  padding-right: 36px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select__input .input {
+  cursor: pointer;
+}
+
+.input {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 16px;
+  color: #37383c;
+  background-color: #fff;
+  border: 2px solid rgba(55, 56, 60, .16);
+  border-radius: 4px;
+  box-sizing: border-box !important;
+  transition: all .3s ease-in;
+  caret-color: #37383c;
+  width: 100%;
+}
+
+.select__input__chevron {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+  width: 24px;
+  overflow: hidden;
+}
+
+.select__input__chevron__item .select__input__chevron__item__m-up {
+  transform: translateY(-100%);
+}
+
+.select__input__chevron__item {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+  transition: all .2s linear;
+}
+
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+}
+
+.icon__m-size-medium {
+  width: 24px;
+  height: 24px;
+}
+
+/* важно кнопка для выбора набора слов */
+.select__input__chevron__item__m-up {
+  visibility: hidden;
+}
+
+.select__options {
+  position: absolute;
+  top: 52px;
+  left: -4px;
+  right: -4px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  z-index: 0;
+  transition: all .2s linear;
+  opacity: 0;
+  transform: scaleY(0) translateZ(0);
+  transform-origin: 50% 0;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 4px 12px 0 rgba(0, 0, 0, .06);
+}
+
+.select-option .select-option__m-selected {
+  color: #2582e7;
+  background-color: #fff;
+}
+
+.select-option {
+  cursor: pointer;
+  min-height: 40px;
+  margin: 4px 4px 0;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-size: 16px;
+  color: #37383c;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select-option:last-child {
+  margin-bottom: 4px;
+}
+
+
+
+.learn-main__card-block {
+  margin-bottom: 20px;
+}
+
+.training-card:active .training-card:focus .training-card:hover .training-card__top-link {
+  text-decoration: none;
+}
+
+.training-card__top-link {
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #28C38A;
+  border-color: rgb(35, 177, 125);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgb(36, 177, 125);
+  border-color: rgb(35, 177, 125);
+}
+
+.training-card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 230px;
+  height: 144px;
+  padding: 16px;
+  overflow-x: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .16), 0 0 1px 0 rgba(0, 0, 0, .12);
+}
+
+.w-50 {
+  width: 45% !important;
+}
+
+.card {
+  margin: 10px;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .08), 0 .5px 1.5px 0 rgba(0, 0, 0, .12);
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-img-top {
+  opacity: 0.8;
+  height: 50%;
+}
+
+.training-card__wide {
+  width: 480px;
+}
+
+.training-card__cover {
+
+  color: #fff;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.training-card__brainstorm {
+  background-image: url('https://staticcdn-new.lingualeo.com/neo-static/brainstorm.d2b7eea10b7e4a035936c8c356b6f54d.svg');
+}
+
+.training-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  margin-bottom: 4px;
+}
+
+.training-card__subtitle .training-card__subtitle-counter {
+
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.training-card__subtitle {
+  margin-bottom: 6px;
+}
+
+.training-card__info-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE2IDE2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8ZyA+Cgk8Zz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTgsMWMzLjksMCw3LDMuMSw3LDdzLTMuMSw3LTcsN3MtNy0zLjEtNy03UzQuMSwxLDgsMSBNOCwwQzMuNiwwLDAsMy42LDAsOHMzLjYsOCw4LDhzOC0zLjYsOC04CgkJCVMxMi40LDAsOCwwTDgsMHoiLz4KCTwvZz4KCTxyZWN0IHg9IjciIHk9IjQiIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+Cgk8cmVjdCB4PSI3IiB5PSI3IiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgd2lkdGg9IjIiIGhlaWdodD0iNSIvPgo8L2c+Cjwvc3ZnPgo=');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  opacity: .4;
+  z-index: 4;
+  transition: opacity .2s ease;
+}
+
+.training-card__hint {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 12px 32px 12px 12px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform .2s ease, opacity .2s ease;
+  background-color: #fff
+}
+
+.training-card__cover .training-card__hint-description {
+  color: #fff;
+}
+
+.training-card__hint-description {
+  text-align: left;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+}
+
+.training-card__hint-skills {
+  position: absolute;
+  bottom: 20px;
+}
+
+.training-card__hint-skills-icon {
+  width: 28px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.training-card__hint-skills-icon[data-icon="writing"] {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLQodC70L7QuV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDYgMzgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ2IDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0VCQUE4NyIgZD0iTTE2LDguN2wtMC43LDAuN0w0LjcsMjAuMWMtMi41LDIuNS0zLjMsNi4zLTIuMSw5LjZsMCwwbDE2LjUtMTYuNWwxLjksMS45bDYuOC02LjhsMCwwCgljLTMuMS0zLjEtOC4xLTMuMS0xMS4zLDBMMTYsOC43eiIvPgo8cmVjdCB4PSIxNC4yIiB5PSItMC41IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgMC43MDcxIC0wLjcwNzEgMC43MDcxIDE4Ljg5MzUgLTcuOTY2MykiIGZpbGw9IiM0NkE4RDgiIHdpZHRoPSI5LjgiIGhlaWdodD0iMzguNiIvPgo8Zz4KCgkJPHJlY3QgeD0iMTguNCIgeT0iMS4zIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgMC43MDcxIC0wLjcwNzEgMC43MDcxIDIwLjY0MTUgLTguNjkwNCkiIGZpbGw9IiM0NTkzQzkiIHdpZHRoPSI0LjgiIGhlaWdodD0iMzguNiIvPgo8L2c+CjxyZWN0IHg9IjI2LjMiIHk9IjQuNCIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIDAuNzA3MSAtMC43MDcxIDAuNzA3MSAxMy44NDE5IC0yMC4xNjE4KSIgZmlsbD0iIzJCNjZBQiIgd2lkdGg9IjkuOCIgaGVpZ2h0PSI0LjUiLz4KPGc+CgoJCTxyZWN0IHg9IjI3LjEiIHk9IjIuNyIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIDAuNzA3MSAtMC43MDcxIDAuNzA3MSAxMi4xMzI5IC0xOS40NTM5KSIgZmlsbD0iIzQ1OTNDOSIgd2lkdGg9IjUiIGhlaWdodD0iNC41Ii8+CjwvZz4KPHBvbHlnb24gZmlsbD0iI0UxQUU1QyIgcG9pbnRzPSIwLjYsMzMuNyA0LjIsMzcuMiA4LjksMzYgMS45LDI4LjkgIi8+CjxwYXRoIGZpbGw9IiM4NzUxM0UiIGQ9Ik0wLjYsMzMuN0wwLDM2LjFjLTAuMiwwLjcsMSwxLjksMS44LDEuOGwyLjQtMC42TDAuNiwzMy43eiIvPgo8cGF0aCBmaWxsPSIjRUM4MTYyIiBkPSJNMzcuMyw3LjZsLTEsMWwtNy03bDEtMUMzMS41LTAuNiwzNCwwLDM1LjksMS45bDAsMEMzNy45LDMuOSwzOC41LDYuNCwzNy4zLDcuNnoiLz4KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMS45MDE1IiB5MT0iMjEuMzg2NiIgeDI9IjI5LjM5MTYiIHkyPSIxNi4zMTIzIj4KCTxzdG9wICBvZmZzZXQ9IjAuNDA4MiIgc3R5bGU9InN0b3AtY29sb3I6I0YyQjk5NyIvPgoJPHN0b3AgIG9mZnNldD0iMC42MTIyIiBzdHlsZT0ic3RvcC1jb2xvcjojRUJBQTg3Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjxwYXRoIGZpbGw9InVybCgjU1ZHSURfMV8pIiBkPSJNMjQuNCwyMC40YzEuOSwyLjYtMS43LDQuNy00LjcsNC42bDUuNyw4LjdoMS45YzAsMCwxNS43LDAsMTUuNywwYzEuNy0zLjIsMy05LDIuNi0xMi45TDMzLDExLjkKCUwyNC40LDIwLjR6Ii8+CjxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQjk5NyIgc3Ryb2tlLXdpZHRoPSI5LjAyMzEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMzIuMiIgeTE9IjI5LjMiIHgyPSIxNC4yIiB5Mj0iMjkuMyIvPgo8cGF0aCBvcGFjaXR5PSIwLjQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMi43LDI2LjhoMi41YzAuOCwwLDEuNSwwLjcsMS41LDEuNXYyYzAsMC44LTAuNywxLjUtMS41LDEuNWgtMi41VjI2Ljh6Ii8+Cgo8L3N2Zz4K');
+  margin-right: 5px;
+}
+
+.training-card__hint-skills-icon[data-icon="listening"] {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLQodC70L7QuV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMzYgNDAiICBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNiA0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxlbGxpcHNlIGZpbGw9IiM0NTkzQzkiIGN4PSI3LjUiIGN5PSIyMyIgcng9IjcuNSIgcnk9IjkuNSIvPgo8Zz4KCTxnPgoJCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iLTIuMDI2MiIgeTE9IjMwLjg0NTEiIHgyPSIyMy45NzM4IiB5Mj0iMzAuODQ1MSI+CgkJCTxzdG9wICBvZmZzZXQ9IjAuNTEwMiIgc3R5bGU9InN0b3AtY29sb3I6I0YyQjk5NyIvPgoJCQk8c3RvcCAgb2Zmc2V0PSIwLjUzNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNFQkFBODciLz4KCQk8L2xpbmVhckdyYWRpZW50PgoJCTxwYXRoIGZpbGw9InVybCgjU1ZHSURfMV8pIiBkPSJNMjEuNCwzNy42Yy0xLjgsMS4zLTUsMi40LTcuMiwyLjRoLTMuNGMtMi4yLDAtNC42LTEuNy01LjItMy44bC0xLjMtMy45QzMuNiwzMC4yLDMsMjcsMywyNS4xCgkJCWMwLTEuOSwxLjgtMy40LDQtMy40aDE4YzIuMiwwLDQsMS44LDQsNFYyOGMwLDIuMi0xLjQsNS4xLTMuMiw2LjRMMjEuNCwzNy42eiIvPgoJPC9nPgoJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8yXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMS44NDkxIiB5MT0iMTUuNSIgeDI9IjI0LjE1MDkiIHkyPSIxNS41Ij4KCQk8c3RvcCAgb2Zmc2V0PSIwLjUxMDIiIHN0eWxlPSJzdG9wLWNvbG9yOiNGMkI5OTciLz4KCQk8c3RvcCAgb2Zmc2V0PSIwLjUzNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNFQkFBODciLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8cGF0aCBmaWxsPSJ1cmwoI1NWR0lEXzJfKSIgZD0iTTI5LDI2SDNWMTQuMUMzLDUuNSw4LjgsNSwxNiw1aDBjNy4yLDAsMTMsMC41LDEzLDkuMVYyNnoiLz4KCTxwYXRoIGZpbGw9IiM5ODdBNUQiIGQ9Ik0yMyw5LjZjMCwwLTIuMywyLjQtMTIuOCwyLjRDMC4xLDEyLDEsMywxLDNzNC4zLDAsMTQuNCwwYzIuMiwwLDMuOSwwLDMuOSwwTDIzLDkuNnoiLz4KCTxwYXRoIGZpbGw9IiM5ODdBNUQiIGQ9Ik0yNywyNWgzVjE1aC01djhDMjUsMjQuMSwyNS45LDI1LDI3LDI1eiIvPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGZpbGw9IiM5ODdBNUQiIGQ9Ik0yMSwzaC02djZoNmMyLjIsMCw0LDEuOCw0LDRsMCw1aDVsMC02QzMwLDcsMjYsMywyMSwzeiIvPgoJCTwvZz4KCTwvZz4KCTxwYXRoIGZpbGw9IiNFQkFBODciIGQ9Ik0yOSwyOGgtM3YtNGMwLTEuNywxLjMtMywzLTNoMGMxLjcsMCwzLDEuMywzLDN2MUMzMiwyNi43LDMwLjcsMjgsMjksMjh6Ii8+Cgk8cGF0aCBmaWxsPSIjQ0M4NTZGIiBkPSJNMTQsMjdoLTRjMCwxLjEsMC45LDIsMiwyUzE0LDI4LjEsMTQsMjd6Ii8+CgkKCQk8bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiM5ODdBNUQiIHN0cm9rZS13aWR0aD0iMi4xMjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMTQuOCIgeTE9IjE4IiB4Mj0iMjAiIHkyPSIxOCIvPgoJCgkJPGxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTg3QTVEIiBzdHJva2Utd2lkdGg9IjIuMTI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjMuMyIgeTE9IjE4IiB4Mj0iOC4yIiB5Mj0iMTgiLz4KCTxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCNEM0NiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSIKCQlNNC44LDIxLjdjMCwwLDAuNSwwLjYsMS41LDAuNmMwLjgsMCwxLjctMC42LDEuNy0wLjYiLz4KCTxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCNEM0NiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSIKCQlNMTUuNSwyMS43YzAsMCwwLjUsMC42LDEuNSwwLjZjMC44LDAsMS43LTAuNiwxLjctMC42Ii8+Cgk8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiM3QjRDNDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9IgoJCU0xMSwzM2MwLDAsMC42LDAsMi40LDBjMi45LDAsNC42LTIuMyw0LjYtMi4zIi8+CjwvZz4KPGVsbGlwc2UgZmlsbD0iIzQ1OTNDOSIgY3g9IjI4LjUiIGN5PSIyNC41IiByeD0iNy41IiByeT0iOS41Ii8+CjxlbGxpcHNlIGZpbGw9IiMyQjY2QUIiIHN0cm9rZT0iIzQ2QThEOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGN4PSIzMCIgY3k9IjI0LjUiIHJ4PSI0IiByeT0iNS41Ii8+CjxnPgoJPGRlZnM+CgkJPHBvbHlnb24gaWQ9IlNWR0lEXzNfIiBwb2ludHM9IjksMCA5LDMgMjAsMyAyMCwyMiAzMiwyMiAzMiwwIAkJIi8+Cgk8L2RlZnM+Cgk8Y2xpcFBhdGggaWQ9IlNWR0lEXzRfIj4KCQk8dXNlIHhsaW5rOmhyZWY9IiNTVkdJRF8zXyIgIG92ZXJmbG93PSJ2aXNpYmxlIi8+Cgk8L2NsaXBQYXRoPgoJPGcgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzRfKSI+CgkJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkI2NkFCIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTYuNSwyOS41VjEyLjFjMC01LjksNC44LTEwLjYsMTAuNi0xMC42aDIuNwoJCQljNS45LDAsMTAuNiw0LjgsMTAuNiwxMC42djE3LjIiLz4KCTwvZz4KPC9nPgoKPC9zdmc+Cg==');
+}
+
+.training-card__hint-skills-icon[data-icon="vocabulary"] {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLQodC70L7QuV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMzggNDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM4IDQyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI0YyQjk5NyIgZD0iTTAsNDJoMTFWMTcuOWwwLDBjLTUuOCwwLTExLDQuNy0xMSwxMC42VjQyeiIvPgo8cGF0aCBmaWxsPSIjQzk5MDc5IiBkPSJNMTYuMiwyNi40SDkuNWMtMS40LDAtMi41LTEuMS0yLjUtMi41di0wLjNjMC0xLjQsMS4xLTIuNSwyLjUtMi41aDYuN2MxLjQsMCwyLjUsMS4xLDIuNSwyLjV2MC4zCglDMTguNywyNS4zLDE3LjYsMjYuNCwxNi4yLDI2LjR6Ii8+CjxwYXRoIGZpbGw9IiNDOTkwNzkiIGQ9Ik02LjIsNDBINHYtOGg5djIuNkMxMywzNy42LDkuOSw0MCw2LjIsNDB6Ii8+CjxwYXRoIGZpbGw9IiNGMkI5OTciIGQ9Ik0yLDQxLjdMMiw0MS43bDAtMTBoN3Y0LjFDOSwzOS4zLDUuOSw0MS43LDIsNDEuN3oiLz4KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNi4xODUyIiB5MT0iMjEiIHgyPSItMi44MTQ4IiB5Mj0iMjEiPgoJPHN0b3AgIG9mZnNldD0iMC41IiBzdHlsZT0ic3RvcC1jb2xvcjojNDZBOEQ4Ii8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjUiIHN0eWxlPSJzdG9wLWNvbG9yOiM0NTkzQzkiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdGggZmlsbD0idXJsKCNTVkdJRF8xXykiIGQ9Ik0zOCwzN0gxM2MtMi4yLDAtNC0xLjgtNC00VjVoMjlWMzd6Ii8+CjxnPgoJPGc+CgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyLjQsMjZsLTEtMi43aC0zLjhsLTEsMi43SDE1bDMuNy05LjloMS44bDMuNyw5LjlIMjIuNHogTTIxLDIxLjlsLTAuOS0yLjdjLTAuMS0wLjItMC4yLTAuNS0wLjMtMC45CgkJCWMtMC4xLTAuNC0wLjItMC43LTAuMi0wLjljLTAuMSwwLjYtMC4zLDEuMi0wLjUsMS44bC0wLjksMi42SDIxeiIvPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zMS4xLDI2bC0wLjMtMWgtMC4xYy0wLjQsMC41LTAuNywwLjgtMS4xLDAuOWMtMC40LDAuMi0wLjgsMC4yLTEuNCwwLjJjLTAuNywwLTEuMy0wLjItMS43LTAuNgoJCQljLTAuNC0wLjQtMC42LTEtMC42LTEuN2MwLTAuOCwwLjMtMS40LDAuOS0xLjdjMC42LTAuNCwxLjQtMC42LDIuNi0wLjZsMS4zLDBWMjFjMC0wLjUtMC4xLTAuOC0wLjMtMS4xYy0wLjItMC4yLTAuNi0wLjQtMS0wLjQKCQkJYy0wLjQsMC0wLjgsMC4xLTEuMSwwLjJjLTAuNCwwLjEtMC43LDAuMi0xLDAuNEwyNi42LDE5YzAuNC0wLjIsMC44LTAuNCwxLjMtMC41YzAuNS0wLjEsMC45LTAuMiwxLjQtMC4yYzEsMCwxLjcsMC4yLDIuMiwwLjYKCQkJYzAuNSwwLjQsMC43LDEuMSwwLjcsMnY1SDMxLjF6IE0yOC43LDI0LjljMC42LDAsMS0wLjIsMS40LTAuNWMwLjMtMC4zLDAuNS0wLjgsMC41LTEuNHYtMC42bC0xLDBjLTAuNywwLTEuMywwLjItMS42LDAuNAoJCQljLTAuMywwLjItMC41LDAuNi0wLjUsMWMwLDAuMywwLjEsMC42LDAuMywwLjhDMjgsMjQuOCwyOC4zLDI0LjksMjguNywyNC45eiIvPgoJPC9nPgo8L2c+CjxwYXRoIGZpbGw9IiNGMkI5OTciIGQ9Ik0xNS42LDMyaC03Yy0xLjQsMC0yLjUtMS4xLTIuNS0yLjV2MGMwLTEuNCwxLjEtMi41LDIuNS0yLjVoN2MxLjQsMCwyLjUsMS4xLDIuNSwyLjV2MAoJQzE4LjEsMzAuOSwxNywzMiwxNS42LDMyeiIvPgo8cGF0aCBmaWxsPSIjMkI2NkFCIiBkPSJNMzgsOUgxM2MtMi4yLDAtNC0xLjgtNC00VjRjMC0yLjIsMS44LTQsNC00bDI1LDBWOXoiLz4KPHBhdGggZmlsbD0iI0M3REFFMCIgZD0iTTEzLDdoMjVWMkgxM2MtMS4xLDAtMiwwLjktMiwydjFDMTEsNi4xLDExLjksNywxMyw3eiIvPgo8cGF0aCBvcGFjaXR5PSIwLjQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNiwzMWgtMS41Yy0wLjgsMC0xLjUtMC43LTEuNS0xLjV2MGMwLTAuOCwwLjctMS41LDEuNS0xLjVIMTZWMzF6Ii8+Cgo8L3N2Zz4K');
+}
+
+.training-card__normal {
+  width: 230px;
+}
+
+
+.header-button {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #2582e7;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .16), 0 0 1px 0 rgba(0, 0, 0, .12);
+  padding: 4px 8px 4px 16px;
+  border-radius: 16px;
+  transition: all .3s ease-in;
+  text-transform: uppercase;
+  float: right;
+}
+
+.card-group__label .header-button {
+  text-decoration: none;
+  padding: 2px 10px 2px 18px;
+}
+
+.card-group__label .header-button .icon {
+  padding: 0;
+  margin-right: 0;
+}
+
+.icon>svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-group__block {
+  margin-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+
+.trainings-block {
+  box-sizing: border-box;
+  width: 480px;
+  height: 258px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .08), 0 .5px 1.5px 0 rgba(0, 0, 0, .12);
+  color: #37383c;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.trainings-block__body {
+  color: #37383c;
+}
+
+.trainings-block__items {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.trainings-block__item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.trainings-block__item-icon {
+  position: static;
+  min-width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.trainings-block__item-icon-beginner {
+  background-image: url('https://i.ibb.co/Nnw0wqC/A.png');
+
+}
+
+.trainings-block__item-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trainings-block__item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #37383c;
+  margin-left: 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.trainings-block__item-volume {
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #7e919f;
+  text-align: right;
+  padding-right: 8px;
+  display: flex;
+}
+
+
+.trainings-block__item-icon-middle {
+  background-image: url('https://i.ibb.co/LJnpZHx/B.png');
+}
+
+
+.trainings-block__item-icon-advanced {
+  background-image: url('https://i.ibb.co/YB4ymRm/C.png');
+}
+
+.main__on-tablet_true {}
+
+.learn-main__card-block {}
+
+.training-card__top-link {}
+
+.training-card {}
+
+.training-card__wide {}
+
+.training-card__cover {}
+
+.training-card__speaking {}
+
+.training-card__title {}
+
+.training-card__subtitle {}
+
+.training-card__try {}
+
+.training-card__info-icon {}
+
+.training-card__hint {}
+
+.training-card__hint-description {}
+
+.training-card__hint-skills {}
+
+.learn-main__on-tablet_true {}
+
+.training-card__set-word {}
+
+.training-card__hint-skills-icon {}

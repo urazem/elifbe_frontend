@@ -1,0 +1,52 @@
+[{
+    "id": 1,
+    "original": "бесплатно",
+    "translated": "bedava",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": ""
+  },
+  {
+    "id": 2,
+    "original": "душ",
+    "translated": "duş",
+    "transcription": "",
+    "description": "принять душ - duşta yuvunmaq",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": ""
+  },
+  {
+    "id": 3,
+    "original": "заснуть",
+    "translated": "yuqlamaq",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/04/03/10/42/woman-2197947_960_720.jpg"
+  },
+  {
+    "id": 4,
+    "original": "томат",
+    "translated": "tomat",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  },
+  {
+    "id": 5,
+    "original": "горячий",
+    "translated": "sıcaq",
+    "transcription": "",
+    "description": "горячая пища - sıcaq aş",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  }
+
+]

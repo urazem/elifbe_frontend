@@ -1,0 +1,224 @@
+<div class="application__content-inner application__content-inner__m-with-sidebar">
+  <div class="dictionary">
+    <div>
+      <div class="dictionary-main-view">
+        <div class="dictionary-page">
+          <div class="dictionary-page__block">
+            <div class="page-overview">
+              <div>
+                <div class="kit-layer">
+                  <div class="card-group_elifbe ">
+                    <div class="card-group_elifbe ">
+                      <div class="card-group__label"><span>Рекомендуемые наборы и разговорники</span></div>
+                      <div class="card-group__block">
+                        <div>
+                          <div class="kit-layer">
+                            <div class="slider">
+                              <div class="slider__wrapper">
+                                <div class="slider__container">
+                                  <div class="slider__moveable" [ngStyle]="{'left': left}">
+                                    <div class="kit-layer">
+                                      <div class="card-set">
+                                        <ul class="card-set__items card-set__items__m-single-row">
+                                          <li *ngFor="let set of sets let i = index">
+                                            <div class="kit-layer">
+                                              <div class="card card__cover card__horizontal card__wordset    "
+                                                data-src="card">
+                                                <div class="card__background"
+                                                  style="background-image: url({{set.image}});">
+                                                </div>
+                                                <div class="card__body">
+                                                  <div class="card__header">
+                                                    <h2 class="card__title" style="font-weight: 600;">{{set.title}} [
+                                                      {{set.crt_title}}]
+                                                    </h2>
+                                                  </div>
+                                                  <div class="card__info ">
+                                                    <div><strong class="card__info-set-title"><span>Набор
+                                                          слов</span></strong><span
+                                                        class="card__info-divider">・</span><span><span>{{set.word_count}}
+                                                          слов</span></span></div>
+                                                  </div>
+                                                  <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                                </div>
+                                                <div class="card__progress">
+                                                  <div class="card__progress-inner" style="width: 0%;"></div>
+                                                </div>
+                                                <div (click)="clickSet(set)" class="card__operation"><span
+                                                    class="icon icon__m-size-medium"
+                                                    style="width: 24px; height: 24px; "><svg viewBox="0 0 24 24"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g fill="none">
+                                                        <path [ngClass]="check(set) ? 'block' : 'none'" d=" M10.983 11H6.717c-.407 0-.711.2-.915.5-.203.3-.203.7 0
+                                                          1.1.204.4.61.5.915.5h10.666c.407 0
+                                                          .711-.2.915-.5.203-.3.203-.7
+                                                          0-1.1-.204-.3-.61-.5-.915-.5h-4.368" fill="currentColor">
+                                                        </path>
+                                                        <path [ngClass]="check(set) ? 'none' : 'block'"
+                                                          d=" M12 5.6c-.6 0-1.1.5-1 1.1V11H6.7c-.4
+                                                          0-.7.2-.9.5-.2.3-.2.7 0 1.1.2.3.6.5.9.5H11v4.3c0
+                                                          .4.2.7.5.9.3.2.7.2 1.1 0 .3-.2.5-.6.5-.9v-4.3h4.3c.4 0
+                                                          .7-.2.9-.5.2-.3.2-.7
+                                                          0-1.1-.2-.3-.6-.5-.9-.5h-4.3V6.7c0-.3-.1-.6-.3-.8-.3-.2-.5-.3-.8-.3z" fill="currentColor"></path>
+                                                      </g>
+                                                    </svg></span></div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="slider__dots">
+                                  <span (click)="slide(1)" class="slider__dot "
+                                    [class.slider__dot--active]="!dotsClicked && indexDot==1"></span>
+                                  <span (click)="slide(2)" class="slider__dot "
+                                    [class.slider__dot--active]="!dotsClicked && indexDot==2"></span>
+                                  <span (click)="slide(3)" class="slider__dot "
+                                    [class.slider__dot--active]="!dotsClicked && indexDot==3"></span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mix-container ">
+                <div class="kit-layer">
+                  <div class="card-group_elifbe ">
+                    <div class="card-group_elifbe ">
+                      <div class="card-group__label"><span>Наборы на изучении</span><a class="header-button"
+                          href="/ru/dictionary/sets/my">Все<span class="icon icon__m-size-medium"
+                            style="width: 24px; height: 24px; color: rgb(37, 130, 231);"><svg
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path fill="currentColor" fill-rule="evenodd"
+                                d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                            </svg></span></a></div>
+                      <div class="card-group__block">
+                        <div>
+                          <div class="kit-layer">
+                            <div class="card-set">
+                              <ul class="card-set__items">
+                                <li (click)="myVocablurary()">
+                                  <div class="kit-layer">
+                                    <div
+                                      class="card card__icon card__vertical card__dictionary  card__no-background pre_def_image_1 "
+                                      data-src="card">
+                                      <div class="card__background"></div>
+                                      <div class="card__body">
+                                        <div class="card__header">
+                                          <h2 class="card__title" style="font-weight: normal;">Мой словарь
+                                          </h2>
+                                        </div>
+                                        <div class="card__info ">
+                                          <div><strong class="card__info-set-title"><span>Набор
+                                                слов</span></strong><span
+                                              class="card__info-divider">・</span><span><span>457
+                                                слов</span></span></div>
+                                        </div>
+                                        <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                      </div>
+                                      <div class="card__progress">
+                                        <div class="card__progress-inner" style="width: 0%;"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li *ngFor="let userSet of userSets">
+                                  <div class="kit-layer">
+                                    <div class="card card__top card__vertical card__wordset " data-src="card">
+                                      <div class="card__background" style="background-image: url({{userSet.image}});">
+                                      </div>
+                                      <div class="card__body">
+                                        <div class="card__header">
+                                          <h2 class="card__title" style="font-weight: 600;">
+                                            {{userSet.title }} [{{userSet.crt_title}}]
+                                          </h2>
+                                        </div>
+                                        <div class="card__info ">
+                                          <div><strong class="card__info-set-title"><span>Набор
+                                                слов</span></strong><span
+                                              class="card__info-divider">・</span><span><span>{{userSet.word_count}}
+                                                слов</span></span></div>
+                                        </div>
+                                        <div class="card__rating hidden"><span>&nbsp;</span></div>
+                                      </div>
+                                      <div class="card__progress">
+                                        <div class="card__progress-inner" style="width: 0%;"></div>
+                                      </div>
+                                      <div class="card__operation" (click)="clickSet(userSet)"><span
+                                          class="icon icon__m-size-medium" style="width: 24px; height: 24px; "><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                              <path d="M0 0h24v24H0z"></path>
+                                              <path fill="currentColor" fill-rule="nonzero"
+                                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                                              </path>
+                                            </g>
+                                          </svg></span></div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kit-layer">
+                <div class="modal-confirmation null">
+                  <div class="modal" style="display: none;" id="modal-layout">
+                    <div class="modal__header">
+                      <div class="modal__close" id="modal-close"></div>
+                    </div>
+                    <div class="modal__body">
+                      <div class="modal-confirmation__container">
+                        <div class="modal-confirmation__question">Вы точно хотите удалить этот набор из ваших
+                          наборов и разговорников?</div>
+                        <div class="modal-confirmation__checkbox">
+                          <div class="checkbox  checkbox"><label for="ModalConfirmation"
+                              class="checkbox__label null"><input id="ModalConfirmation" type="checkbox"
+                                class="checkbox__input" value=""><span class="checkbox__box"></span><span
+                                class="checkbox__icon"></span><span class="checkbox__title">Удалить слова из всех моих
+                                словарей</span></label>
+                          </div>
+                        </div>
+                        <div class="modal-confirmation__btn-container">
+                          <div class="modal-confirmation__btn"><button
+                              class="button button__m-color-azul button__m-size-default button__m-block undefined"><span
+                                class="button__content">Удалить набор</span></button></div>
+                          <div class="modal-confirmation__btn"><button
+                              class="button button__m-color-azul-light button__m-size-default button__m-block undefined"><span
+                                class="button__content">Отмена</span></button></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal__footer">
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dictionary__tests-container">
+      <div class="dictionary__tests-buttons" style="display: none;"><button
+          class="dictionary__show-hide-tests-btn">Show/Hide</button><button class="dictionary__run-tests-btn">Run
+          tests</button></div>
+      <div class="dictionary__tests-report" style="display: none;">
+        <div id="mocha"></div>
+      </div>
+    </div>
+  </div>
+</div>

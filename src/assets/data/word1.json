@@ -1,0 +1,71 @@
+[{
+    "id": 2,
+    "original": "сок",
+    "translated": "şıra",
+    "transcription": "",
+    "description": "фруктовый сок - meyva şırası",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/pX2vw5z/aroma-beverage-blur-citrus-96974.jpg"
+  },
+
+  {
+    "id": 3,
+    "original": "томат",
+    "translated": "tomat",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  }, {
+    "id": 3,
+    "original": "мама",
+    "translated": "ana",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/hYwx7FF/grayscale-photography-of-mother-and-child-1089077.jpg"
+  },
+  {
+    "id": 3,
+    "original": "любовь",
+    "translated": "sevgi, aşq, sevda ",
+    "transcription": "",
+    "description": "",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/mcpkGbX/midsection-of-woman-making-heart-shape-with-hands-256737.jpg"
+  }, {
+    "id": 1,
+    "original": "кофе",
+    "translated": "qave",
+    "transcription": "",
+    "description": "выпить чашечку кофе - bir filcan qave içmek",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  },
+  {
+    "id": 1,
+    "original": "горячий",
+    "translated": "sıcaq",
+    "transcription": "",
+    "description": "горячая пища - sıcaq aş",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  }, {
+
+    "id": 1,
+    "original": "молоко",
+    "translated": "süt",
+    "transcription": "",
+    "description": "кофе с молоком - sütlü qave",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "../img/beverages/молоко.jpg"
+  }
+
+]

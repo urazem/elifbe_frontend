@@ -1,0 +1,25 @@
+<div class="dashboard-training-item">
+  <a [routerLink]="['/training',training.pathName]" routerLinkActive="router-link-active"
+    class="training-card__top-link">
+    <div class="training-card training-card__cover" [ngStyle]="{'background-color': color}">
+
+      <div class="training-card__title">
+        <span>{{training.exerciseName}}</span>
+      </div>
+      <div class=" training-card__subtitle">
+        <span>Словарная тренировка</span>
+      </div>
+      <div class="training-card__subtitle training-card__subtitle-counter">
+        <span></span>
+      </div>
+      <div class="training-card__info-icon">
+        <div class="bi bi-chevron-right" svgIcon="src"></div>
+      </div>
+    </div>
+  </a>
+</div>
+<!-- <div class="training-card__hint">
+      <div class="training-card__hint-description">
+        Улучшает навыки перевода слов
+      </div>
+    </div> -->

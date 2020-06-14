@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 5% 10% 0;
+}
+
+.container-fluid {
+  padding-bottom: 10%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-profile-image {
+  position: relative;
+}
+
+.card-profile-image img {
+  max-width: 100px;
+  max-height: 180px;
+  border-radius: 0.475rem;
+  transform: translate(-50%, -30%);
+  position: absolute;
+  left: 50%;
+  transition: all 0.15s ease;
+}
+
+.card-profile-image img:hover {
+  transform: translate(-50%, -33%);
+}
+
+.d-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.btn-info {
+  width: 180px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #297CD6;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: .75rem .75rem;
+  margin-top: 70px;
+
+}
+
+.btn-info:hover {
+  color: #fff;
+}
+
+.btn-info-upload {
+  margin-left: 21%;
+}
+
+.text-center {
+  padding-top: 40px;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.bg-secondary {
+  background-color: rgba(149, 245, 189, 0.933) !important;
+}
+
+.userData {
+  font-size: 24px;
+}

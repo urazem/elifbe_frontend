@@ -1,0 +1,236 @@
+<div style="height: 2px; background-color: rgb(40, 195, 138);" [ngStyle]="{'width': width +'%'}"
+  class="LearnWordTranslate__progress-bar"></div>
+<div class="application__content application__content__m-no-background">
+  <div class="application__content-inner">
+    <div class="learn-main-view">
+      <div class="learn-page">
+        <div class="LearnWordTranslate">
+          <div class="TrainingActionBar">
+            <div class="TrainingActionBar__title">
+              <div class="TrainingActionBar__heading">Слово-Перевод<button
+                  class="button button__m-color-white button__m-size-default TrainingActionBar__btn-info"><span
+                    class="button__content"><span class="icon icon__m-size-custom "
+                      style="width: 16px; height: 16px; color: rgb(204, 212, 220);"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <g fill="none" fill-rule="evenodd">
+                          <circle cx="8" cy="8" r="7.5" stroke="currentColor" opacity=".3"></circle>
+                          <path fill="currentColor" fiopacity=".3" d="M7 7h2v5H7zm0-3h2v2H7z"></path>
+                        </g>
+                      </svg></span></span></button></div>
+              <div class="TrainingActionBar__description"><span>Словарная тренировка</span></div>
+            </div>
+            <div class="TrainingActionBar__controls">
+              <div class="TrainingActionBar__checkboxes">
+                <div class="checkbox  checkbox"><label for="word-translate-autopronunciation"
+                    class="checkbox__label null"><input id="word-translate-autopronunciation" type="checkbox"
+                      class="checkbox__input" value="" checked=""><span class="checkbox__box"></span><span
+                      class="checkbox__icon"></span><span class="checkbox__title">Автопроизношение</span></label></div>
+              </div>
+              <div class="TrainingActionBar__progress">{{counter}}/10</div>
+            </div>
+            <div class="TrainingActionBar__exit"><button
+                class="button button__m-color-white button__m-size-default TrainingActionBar__btn-exit"><span
+                  class="button__content"><span class="icon icon__m-size-custom "
+                    style="width: 20px; height: 20px; color: rgb(126, 145, 159);"><svg
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                      <path fill="currentColor"
+                        d="M.974 0L0 .974 5.026 6 0 11.026.974 12 6 6.974 11.026 12l.974-.974L6.974 6 12 .974 11.026 0 6 5.026z">
+                      </path>
+                    </svg></span></span></button></div>
+          </div>
+          <div class="LearnWordTranslate__plate-wrapper">
+            <div class="LearnWordTranslate__plate">
+              <div class="PawIcon LearnWordTranslate__paw"><span class="icon icon__m-size-custom "
+                  style="width: 22px; height: 22px; color: inherit;"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                    <defs>
+                      <circle id="a" cx="16" cy="16" r="16"></circle>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <mask id="b" fill="#fff">
+                        <use xlink:href="#a"></use>
+                      </mask>
+                      <use fill="#FFD415" xlink:href="#a"></use>
+                      <path fill="#19D481" d="M16 0h16v16H16z" mask="url(#b)"></path>
+                      <g fill="#FFF" mask="url(#b)">
+                        <path
+                          d="M24.845 15.492l-.983.582a2.354 2.354 0 01-3.228-.825 2.356 2.356 0 01.824-3.229l.983-.581a2.355 2.355 0 112.404 4.053m-1.003 7.205l-.661.264a2.36 2.36 0 01-3.06-1.32 2.36 2.36 0 011.32-3.061l.661-.263a2.356 2.356 0 111.74 4.38m-5.898-11.001a2.355 2.355 0 01-2.018-3.567l.588-.983a2.357 2.357 0 014.043 2.423l-.59.983a2.353 2.353 0 01-2.023 1.144M17.384 23c-.44 1.755-1.831 3.104-3.094 2.994-1.261-.11-2.476-1.339-2.694-2.732-.22-1.39-1.522-2.694-2.894-2.894-1.373-.2-2.586-1.395-2.696-2.658-.108-1.263 1.239-2.654 2.994-3.094 1.757-.439 4.361-.619 5.788-.399 1.427.22 2.776 1.567 2.995 2.994.22 1.427.04 4.032-.399 5.789M9.052 8.82l.261-.66a2.356 2.356 0 114.381 1.736l-.261.662a2.358 2.358 0 01-3.059 1.322 2.356 2.356 0 01-1.322-3.06">
+                        </path>
+                      </g>
+                    </g>
+                  </svg></span>
+                <div class="PawIcon__tooltip">Прогресс: 25%</div>
+              </div><button
+                class="button button__m-color-white button__m-size-default ButtonSound LearnWordTranslate__sound"><span
+                  class="button__content"><span class="icon icon__m-size-custom "
+                    style="width: 33px; height: 33px; color: rgb(125, 145, 159);"><svg
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                      <path fill="currentColor"
+                        d="M15.788 13.007a3 3 0 110 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z"
+                        fill-rule="evenodd"></path>
+                    </svg></span></span></button>
+              <div class="WordTranslateQuestion">
+                <div class="WordTranslateQuestion__text-wrapper">
+                  <div class="WordTranslateQuestion__text"><span> {{word.translated}}</span></div>
+                </div>
+                <div class="WordTranslateQuestion__transcription">{{word.transcription}}</div>
+                <div [ngStyle]="{'display': clicked && !enter ? 'block' : 'none' }"
+                  style="background-image: url({{word.imageUrl}});" class="WordTranslateQuestion__pic"></div>
+                <div class="WordTranslateQuestion__context"
+                  [ngStyle]="{'display': clicked && !enter ? 'block' : 'none' }">
+                  <div class="WordTranslateQuestion__context-title"><span>Пример</span></div>
+                  <div class="WordTranslateQuestion__context-text">{{word.description}}</div>
+                </div>
+              </div>
+              <!-- (click)="selectedWord = id" -->
+              <div class="LearnWordTranslate__choose-answer">Выбери правильный ответ</div>
+              <div class="WordTranslateAnswers"><button (click)="answer(item)" (click)="selected = i"
+                  *ngFor="let item of words let i = index" [attr.data-index]="i"
+                  [class.WordTranslateAnswers__answer__m-correct]="correctWord == i"
+                  [class.button__m-color-white]="correctWord != i"
+                  [class.WordTranslateAnswers__answer__m-wrong]="wrong && selected==i" [disabled]="clicked"
+                  class="button button__m-color-white button__m-size-default WordTranslateAnswers__answer"><span
+                    class="button__content"><span
+                      class="WordTranslateAnswers__number">{{i + 1}}</span>{{item.original}}</span></button>
+                <button [class.WordTranslateAnswers__answer__m-next]="clicked"
+                  class="button button__m-color-white button__m-size-default WordTranslateAnswers__answer WordTranslateAnswers__answer__m-give-up"
+                  (click)="next()"><span class="button__content"><span
+                      class="WordTranslateAnswers__number">Enter</span><span>{{buttonText}}</span></span></button>
+              </div>
+            </div>
+            <div class="TrainingFooter">
+              <div class="TrainingFooter__l-col"><button
+                  class="button button__m-color-white button__m-size-default TrainingFooter__btn-delete"><span
+                    class="button__content"><span class="icon icon__m-size-custom "
+                      style="width: 24px; height: 24px; color: rgb(126, 145, 159);"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="nonzero"
+                          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                      </svg></span>
+                    <div class="TrainingFooter__tooltip"><span>Удалить слово из словаря</span></div>
+                  </span></button></div>
+              <div class="TrainingFooter__r-col">
+                <div class="LearnWordTranslate__r-col-content">
+                  <div>
+                    <div class="LearnWordTranslate__result-phrase"
+                      [class.LearnWordTranslate__result-phrase__m-wrong]="clicked && wrong"
+                      [class.LearnWordTranslate__choose-answer__m-correct]="clicked && correctWord==selected">
+                      {{resultPhrase}}</div>
+                    <div class="LearnWordTranslate__result"></div>
+                  </div>
+                  <div class="PawIcon LearnWordTranslate__paw"><span class="icon icon__m-size-custom "
+                      style="width: 22px; height: 22px; color: inherit;"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                        <defs>
+                          <circle id="a" cx="56" cy="89" r="6"></circle>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <mask id="b" fill="#fff">
+                            <use xlink:href="#a"></use>
+                          </mask>
+                          <use fill="#FFD415" xlink:href="#a"></use>
+                          <path fill="#19D481" d="M16 0h16v16H16z" mask="url(#b)"></path>
+                          <g fill="#FFF" mask="url(#b)">
+                            <path
+                              d="M24.845 15.492l-.983.582a2.354 2.354 0 01-3.228-.825 2.356 2.356 0 01.824-3.229l.983-.581a2.355 2.355 0 112.404 4.053m-1.003 7.205l-.661.264a2.36 2.36 0 01-3.06-1.32 2.36 2.36 0 011.32-3.061l.661-.263a2.356 2.356 0 111.74 4.38m-5.898-11.001a2.355 2.355 0 01-2.018-3.567l.588-.983a2.357 2.357 0 014.043 2.423l-.59.983a2.353 2.353 0 01-2.023 1.144M17.384 23c-.44 1.755-1.831 3.104-3.094 2.994-1.261-.11-2.476-1.339-2.694-2.732-.22-1.39-1.522-2.694-2.894-2.894-1.373-.2-2.586-1.395-2.696-2.658-.108-1.263 1.239-2.654 2.994-3.094 1.757-.439 4.361-.619 5.788-.399 1.427.22 2.776 1.567 2.995 2.994.22 1.427.04 4.032-.399 5.789M9.052 8.82l.261-.66a2.356 2.356 0 114.381 1.736l-.261.662a2.358 2.358 0 01-3.059 1.322 2.356 2.356 0 01-1.322-3.06">
+                            </path>
+                          </g>
+                        </g>
+                      </svg></span>
+                    <div class="PawIcon__tooltip">Прогресс: 25%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ModalAlt TrainingInfoModal">
+            <div class="ModalAlt__backdrop"></div>
+            <div class="ModalAlt__body"><button
+                class="button button__m-color-white button__m-size-default ModalAlt__close-button"><span
+                  class="button__content"><span class="icon icon__m-size-custom "
+                    style="width: 18px; height: 18px; color: white;"><svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 12 12">
+                      <path fill="currentColor"
+                        d="M.974 0L0 .974 5.026 6 0 11.026.974 12 6 6.974 11.026 12l.974-.974L6.974 6 12 .974 11.026 0 6 5.026z">
+                      </path>
+                    </svg></span></span></button>
+              <div class="ModalAlt__content">
+                <div class="TrainingInfoModal__icon"><span class="icon icon__m-size-custom "
+                    style="width: 64px; height: 64px; color: inherit;"><svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 46 64">
+                      <g fill="none" fill-rule="evenodd">
+                        <path fill="#9EAEB3" fill-rule="nonzero"
+                          d="M32.09 30.897h-6.57V9.048c0-1.986 1.095-3.53 2.957-3.53 1.972 0 3.724 1.544 3.724 3.53v21.849h-.11zM21.138 25.38h-6.571V3.53c0-1.985 1.095-3.53 2.957-3.53 1.971 0 3.614 1.545 3.614 3.531v21.848z">
+                        </path>
+                        <path fill="#9EAEB3" fill-rule="nonzero"
+                          d="M34.829 64H10.952V29.793c0-6.62 5.367-12.027 11.938-12.027 6.572 0 11.939 5.406 11.939 12.027V64z">
+                        </path>
+                        <path fill="#3C4050" fill-rule="nonzero" d="M22.343 35.531h.986v3.09h-.986z"></path>
+                        <ellipse cx="29.133" cy="29.793" fill="#3C4050" fill-rule="nonzero" rx="1.533" ry="1.545">
+                        </ellipse>
+                        <ellipse cx="16.648" cy="29.793" fill="#3C4050" fill-rule="nonzero" rx="1.533" ry="1.545">
+                        </ellipse>
+                        <ellipse cx="22.89" cy="33.986" fill="#3C4050" fill-rule="nonzero" rx="1.533" ry="1.545">
+                        </ellipse>
+                        <path stroke="#3C4050" stroke-width="1.048" d="M26.505 37.628c-1.972 1.986-5.257 1.986-7.229 0">
+                        </path>
+                        <path fill="#CDD" fill-rule="nonzero"
+                          d="M25.519 5.517h6.571v5.407c0 1.986-1.204 3.42-3.614 3.42h.11c-2.41 0-3.067-1.323-3.067-3.42V5.517z">
+                        </path>
+                        <path fill="#706BA1" fill-rule="nonzero"
+                          d="M36.91 64l-.767-8.166c0-.882-.767-1.655-1.643-1.655H10.733c-.876 0-1.643.773-1.643 1.655L8.871 64H36.91z">
+                        </path>
+                        <path fill="#4D468A" fill-rule="nonzero"
+                          d="M36.91 64l-.767-8.166c0-.882-.767-1.655-1.643-1.655H22.671V64H36.91z"></path>
+                        <path fill="#706BA1" fill-rule="nonzero"
+                          d="M1.533 52.966H43.81c.876 0 1.533.662 1.533 1.544v.11c0 .883-.657 1.546-1.533 1.546H1.533C.657 56.166 0 55.503 0 54.62v-.11c0-.883.657-1.545 1.533-1.545z">
+                        </path>
+                        <path fill="#B06C95" fill-rule="nonzero" d="M8.871 59.917H36.91V64H8.87z"></path>
+                        <path fill="#CDD" fill-rule="nonzero"
+                          d="M17.305 55.172h-.767c-1.314 0-2.3-1.103-2.3-2.317V47.67a2.322 2.322 0 012.3-2.317h.767c1.314 0 2.3 1.103 2.3 2.317v5.186c.11 1.214-.986 2.317-2.3 2.317zm12.047 0h-.766c-1.315 0-2.3-1.103-2.3-2.317V47.67a2.322 2.322 0 012.3-2.317h.766c1.315 0 2.3 1.103 2.3 2.317v5.186c.11 1.214-.985 2.317-2.3 2.317z">
+                        </path>
+                      </g>
+                    </svg></span></div>
+                <div class="TrainingInfoModal__title"><span>Выбор перевода по оригинальному слову</span></div>
+                <ol class="TrainingInfoModal__list">
+                  <li><span>Выберите перевод, который считаете верным.</span></li>
+                  <li><span>Если не уверены в выборе, нажмите «Не знаю».</span></li>
+                  <li><span>Используйте клавиатуру — это удобно!</span></li>
+                  <li><span>Подсказки клавиш находятся рядом с кнопками.</span></li>
+                  <li><span>Если хотите, чтобы слова озвучивались автоматически, поставьте отметку «Автопроизношение»
+                      вверху страницы.</span></li>
+                </ol>
+              </div>
+              <div class="ModalAlt__buttons"><button
+                  class="button button__m-color-white button__m-size-default TrainingInfoModal__btn-okay"><span
+                    class="button__content"><span>Ок, понятно</span></span></button></div>
+            </div>
+          </div>
+          <div class="ModalAlt TrainingExitModal">
+            <div class="ModalAlt__backdrop"></div>
+            <div class="ModalAlt__body"><button
+                class="button button__m-color-white button__m-size-default ModalAlt__close-button"><span
+                  class="button__content"><span class="icon icon__m-size-custom "
+                    style="width: 18px; height: 18px; color: white;"><svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 12 12">
+                      <path fill="currentColor"
+                        d="M.974 0L0 .974 5.026 6 0 11.026.974 12 6 6.974 11.026 12l.974-.974L6.974 6 12 .974 11.026 0 6 5.026z">
+                      </path>
+                    </svg></span></span></button>
+              <div class="ModalAlt__content">
+                <div class="TrainingExitModal__title"><span>Тренировка не закончена!</span></div>
+                <div class="TrainingExitModal__description"><span>Если вы закроете тренировку, ваши результаты
+                    обнулятся</span></div>
+              </div>
+              <div class="ModalAlt__buttons"><button
+                  class="button button__m-color-white button__m-size-default TrainingExitModal__btn-proceed"><span
+                    class="button__content"><span>Закрыть тренировку</span></span></button><button
+                  class="button button__m-color-white button__m-size-default TrainingExitModal__btn-cancel"><span
+                    class="button__content"><span>Отмена</span></span></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

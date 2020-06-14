@@ -1,0 +1,162 @@
+.main-container {
+  background: #F9F8FD;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.auth-wrapper {
+  margin-top: 170px;
+  margin-left: 170px;
+  width: 300px;
+  height: 300px;
+}
+
+.auth-sidebar {
+  background: rgb(142, 226, 195);
+  color: rgb(27, 134, 95);
+  width: 514px;
+  flex-grow: 0;
+  position: relative;
+}
+
+.auth-sidebar .auth-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.auth-sidebar header {
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 64px 64px 30px;
+}
+
+.auth-sidebar a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.auth-sidebar header .logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.auth-sidebar header .logo {
+  opacity: 0.7;
+}
+
+.auth-sidebar header .elifbe-logo {
+  fill: currentColor;
+  color: inherit;
+  width: 90px;
+  height: auto;
+}
+
+.auth-sidebar header h1 {
+  color: inherit;
+  display: none;
+  font: bold 32px/38px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.auth-sidebar header h1 {
+  display: block;
+  padding-right: 30px;
+}
+
+.auth-sidebar header h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.content {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-content {
+  width: 100%;
+  max-width: 416px;
+  margin: auto;
+}
+
+.auth-content {
+  padding: 30px 60px 0;
+  margin: 0;
+}
+
+h2 {
+  font: bold 24px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 26px;
+}
+
+h4 {
+  font: 20px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 26px;
+}
+
+.auth-connections {
+  margin: 0 0 40px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auth-nav {
+  display: none;
+  position: relative;
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 0;
+  padding: 30px 30px 0;
+}
+
+a {
+  color: #4f3cc9;
+  text-decoration: none;
+}
+
+.signIn-button {
+  background-color: rgb(84, 221, 171);
+  color: #fff;
+  padding: 3px 12px;
+}
+
+.auth-sidebar .artwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.auth-sidebar .artwork .artwork-image {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}

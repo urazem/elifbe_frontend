@@ -1,0 +1,141 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+  style="background-size: cover; background-position: center top;">
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-4 order-xl-1 mb-5 mb-xl-0">
+      <div class="card card-profile shadow">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 order-lg-2">
+            <div class="card-profile-image">
+              <a href="javascript:void(0)">
+                <img *ngIf="retrievedImage; else elseTemplate" class="rounded-circle" [src]="retrievedImage" />
+
+                <ng-template #elseTemplate>
+                  <img class="rounded-circle" src="https://i.ibb.co/gtMpvpg/noavatar.png" />
+                </ng-template>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body pt-0 pt-md-4">
+          <div class="col">
+            <div class="card-profile-stats d-flex justify-content-center mt-md-6">
+              <form form="formFile">
+                <input type="file" id="file" style="display: none;" #fileInput (change)="onClickFileInputButton()" />
+                <button for="file" class="btn btn-info btn-info-upload" mat-raised-button color="primary"
+                  (click)="onChangeFileInput()">
+                  Обновить фото
+                </button></form>
+              <div class="text-center">
+                <h3 *ngIf="token">
+                  {{ currentUser.username
+                  }}<span class="font-weight-light" *ngIf="currentUser.age != '0'">, {{ currentUser.age }}</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-8 order-xl-2">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Мой аккаунт</h3>
+            </div>
+          </div>
+        </div>
+        <div [ngSwitch]="changeButton" class="card-body">
+          <form *ngSwitchDefault>
+            <h6 class="heading-small text-muted mb-4">Информация профиля</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username">Имя пользователя</label>
+                    <p *ngIf="token" class="userData">{{ currentUser.username }}</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-email">Почта</label>
+                    <p class="userData">{{ currentUser.email }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div *ngIf="currentUser.firstName" class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username">Имя</label>
+                    <P class="userData">{{ currentUser.firstName }}</P>
+                  </div>
+                </div>
+                <div *ngIf="currentUser.lastName" class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-email">Фамилия</label>
+                    <p class="userData">{{ currentUser.lastName }}</p>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" (click)="change()" class="btn btn-info">
+                Редактировать
+              </button>
+            </div>
+          </form>
+          <form *ngSwitchCase="true" [formGroup]="form" (ngSubmit)="saveChanges()">
+            <h6 class="heading-small text-muted mb-4">Информация профиля</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username">Имя пользователя</label>
+                    <input type="text" id="input-username" formControlName="username"
+                      class="form-control form-control-alternative" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-email">Почта</label>
+                    <input type="email" id="input-email" formControlName="email"
+                      class="form-control form-control-alternative" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username">Имя</label>
+                    <input type="text" id="input-username" formControlName="firstName"
+                      class="form-control form-control-alternative" value="{{ currentUser.firstName }}" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-email">Фамилия</label>
+                    <input type="text" id="input-email" formControlName="lastName"
+                      class="form-control form-control-alternative" value="{{ currentUser.lastName }}" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username">Возраст</label>
+                    <input type="text" id="input-age" formControlName="age"
+                      class="form-control form-control-alternative" />
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-info">Сохранить</button>
+              <button [ngStyle]="{'margin-left': '10px'}" (click)="close()" class="btn btn-info">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

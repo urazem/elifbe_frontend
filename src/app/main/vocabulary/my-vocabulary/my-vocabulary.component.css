@@ -1,0 +1,312 @@
+.application__content-inner {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+
+}
+
+.my-vocabulary-main__block {
+  flex-grow: 0;
+  width: auto;
+  margin: 0 auto;
+  padding: 16px 0;
+  padding: 24px 0 54px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 13%;
+  max-width: 100%;
+}
+
+
+.sets-words {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.card-word {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e9ee;
+}
+
+.card_view {
+  width: 300px;
+  height: 300px
+}
+
+.card_image {}
+
+.sets-words__col:not(:last-child) {
+  margin-right: 16px;
+}
+
+.sets-words__col:hover {
+  cursor: pointer;
+}
+
+.sets-words__sound {
+  transition: background-color .2s ease;
+}
+
+.sets-words__sound {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+
+}
+
+
+.sets-words__sound:focus,
+.sets-words__sound:hover {
+  cursor: pointer;
+}
+
+.sets-words__sound:focus,
+.sets-words__sound:hover {
+  background-color: rgba(25, 133, 251, .08);
+}
+
+.sets-words__sound:focus .icon,
+.sets-words__sound:hover .icon {
+  cursor: pointer;
+  color: #2582e7 !important;
+}
+
+
+.sets-words__col_word {
+  width: 440px;
+  display: flex;
+  padding: 8px;
+  margin: -8px;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+}
+
+.sets-words__col_word:hover {
+  background-color: rgba(25, 133, 251, .08);
+}
+
+.sets-words__my-word {
+  padding: 0 6px 2px 0;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+  display: inline-block;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+
+.sets-words__my-word {
+  color: #2582e7;
+}
+
+.sets-words__my-word-translate {
+  padding: 0;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+  display: inline-block;
+  white-space: normal;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.sets-words__word-image-container {
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS04LTloMzJ2MzJILTh6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iIzdFOTE5RiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNS42IDBMNC40NzUgMS4xMjVsMi44NzUgMi45NUM3LjU5IDMuOTk0IDcuNzYgNCA4IDRjMi4yNCAwIDQgMS43NiA0IDQgMCAuMjQuMDA2LjQxLS4wNzUuNjVMMTYgMTIuNzI1VjMuMmMwLS44ODEtLjcxOS0xLjYtMS42LTEuNkgxMkwxMC40IDBINS42ek0xLjE1LjAyNUwuMDI1IDEuMTVsLjcuN0MuMjg1IDIuMTM0IDAgMi42MzcgMCAzLjJ2OS42YzAgLjg4MS43MTkgMS42IDEuNiAxLjZoMTEuNjc1bDEuNTc1IDEuNTc1IDEuMTI1LTEuMTI1TDEuMTUuMDI1em03LjQgNS4yNWwyLjI1IDIuMjVjLS4yNC0xLjItMS4xMzEtMi4wOS0yLjI1LTIuMjV6bS0zLjg1LjU1bC44NzUuODc1QzUuMzUgNy4wODcgNS4yIDcuNTIyIDUuMiA4YzAgMS41MTkgMS4yODEgMi44IDIuOCAyLjhhMi42NiAyLjY2IDAgMCAwIDEuMzI1LS4zNWwuODUuODVjLS42MjguNDI1LTEuMzY2LjctMi4xNzUuNy0yLjI0IDAtNC0xLjc2LTQtNCAwLS44MS4yNzUtMS41NDcuNy0yLjE3NXoiIG9wYWNpdHk9Ii4zMjQiLz4KICAgIDwvZz4KPC9zdmc+Cg==);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+}
+
+.sets-words__word-image {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sets-words__remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+}
+
+.sets-words__remove:focus,
+.sets-words__remove:hover {
+  background-color: #fff2f0;
+}
+
+.sets-words__remove:focus .icon,
+.sets-words__remove:hover .icon {
+  color: #ed593b !important;
+}
+
+
+
+.word-card__detailed {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 548px;
+  border-radius: 8px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, .16);
+  background-color: #fff;
+  padding-top: 180px;
+  padding-bottom: 158px;
+}
+
+.word-card__image,
+.word-card__image-content {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  overflow: hidden;
+}
+
+.word-card__image {
+  width: 180px;
+  height: 180px;
+  padding: 4px;
+  position: absolute;
+  left: calc(50% - 90px);
+  top: -25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS04LTloMzJ2MzJILTh6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iIzdFOTE5RiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNS42IDBMNC40NzUgMS4xMjVsMi44NzUgMi45NUM3LjU5IDMuOTk0IDcuNzYgNCA4IDRjMi4yNCAwIDQgMS43NiA0IDQgMCAuMjQuMDA2LjQxLS4wNzUuNjVMMTYgMTIuNzI1VjMuMmMwLS44ODEtLjcxOS0xLjYtMS42LTEuNkgxMkwxMC40IDBINS42ek0xLjE1LjAyNUwuMDI1IDEuMTVsLjcuN0MuMjg1IDIuMTM0IDAgMi42MzcgMCAzLjJ2OS42YzAgLjg4MS43MTkgMS42IDEuNiAxLjZoMTEuNjc1bDEuNTc1IDEuNTc1IDEuMTI1LTEuMTI1TDEuMTUuMDI1em03LjQgNS4yNWwyLjI1IDIuMjVjLS4yNC0xLjItMS4xMzEtMi4wOS0yLjI1LTIuMjV6bS0zLjg1LjU1bC44NzUuODc1QzUuMzUgNy4wODcgNS4yIDcuNTIyIDUuMiA4YzAgMS41MTkgMS4yODEgMi44IDIuOCAyLjhhMi42NiAyLjY2IDAgMCAwIDEuMzI1LS4zNWwuODUuODVjLS42MjguNDI1LTEuMzY2LjctMi4xNzUuNy0yLjI0IDAtNC0xLjc2LTQtNCAwLS44MS4yNzUtMS41NDcuNy0yLjE3NXoiIG9wYWNpdHk9Ii4zMjQiLz4KICAgIDwvZz4KPC9zdmc+Cg==);
+  background-size: 30px;
+}
+
+.word-card__image,
+.word-card__image-content {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  overflow: hidden;
+}
+
+.word-card__image-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-size: contain;
+  position: relative;
+  border-radius: 2px;
+}
+
+.word-card__content {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  min-height: 100%;
+  width: 100%;
+}
+
+.word-card__sentence .word-card__title {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.09;
+  letter-spacing: normal;
+}
+
+.word-card__speech {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 22px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.word-card__sentence .word-card__audio {
+  margin-right: 25px;
+}
+
+.word-card__audio {
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE4IDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS03LTZoMzJ2MzJILTd6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iIzdFOTE5RiIgZD0iTTguNzg4IDcuMDA3YTMgMyAwIDEgMSAwIDUuOTg1Yy41NzEgMy4zMTIgMi4wNjQgNS42NzUgMy44MTUgNS42NzUgMi4yNDQgMCA0LjA2NC0zLjg4IDQuMDY0LTguNjY3IDAtNC43ODYtMS44Mi04LjY2Ny00LjA2NC04LjY2Ny0xLjc1MSAwLTMuMjQ0IDIuMzYzLTMuODE1IDUuNjc0ek0xMiAyMEM4LjY4NiAyMCAwIDE1Ljg1NiAwIDEwUzguNjg2IDAgMTIgMHM2IDQuNDc3IDYgMTAtMi42ODYgMTAtNiAxMHoiLz4KICAgIDwvZz4KPC9zdmc+Cg==);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all .2s ease;
+}
+
+.word-card__transcription {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2582e7;
+  cursor: pointer;
+  max-width: calc(100% - 100px);
+}
+
+.word-card__translation {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #995c36;
+  margin-top: 34px;
+  cursor: pointer;
+  padding: 0 22px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.word-card__sentence .word-card__translation {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.word-card__sentence .word-card__translation__m-current .word-card__translation-delete-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: -18px;
+  top: calc(50% - 6px);
+}

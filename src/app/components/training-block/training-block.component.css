@@ -1,0 +1,83 @@
+.card-group-block {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.training-card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 230px;
+  height: 144px;
+  padding: 16px;
+  overflow-x: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.training-card__cover {
+  color: #fff;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.training-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.training-card__subtitle {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.training-card__subtitle-counter {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.card-group-block {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.dashboard-training-item:first-of-type {
+  margin-left: 0;
+}
+
+.training-card__top-link {
+  text-decoration: none;
+}

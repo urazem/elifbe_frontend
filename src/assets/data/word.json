@@ -1,0 +1,52 @@
+[{
+    "id": 1,
+    "original": "молоко",
+    "translated": "süt",
+    "transcription": "",
+    "description": "кислое молоко - qatıq, yoğurt",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/tQMfknC/baking-basket-book-bottle-289368.jpg"
+  },
+  {
+    "id": 2,
+    "original": "сок",
+    "translated": "şıra",
+    "transcription": "",
+    "description": "фруктовый сок - meyva şırası",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/pX2vw5z/aroma-beverage-blur-citrus-96974.jpg"
+  },
+  {
+    "id": 3,
+    "original": "кофе",
+    "translated": "qave",
+    "transcription": "",
+    "description": "выпить чашечку кофе - bir filcan qave içmek",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://cdn.pixabay.com/photo/2014/12/11/02/56/coffee-563797_960_720.jpg"
+  },
+  {
+    "id": 4,
+    "original": "счастье",
+    "translated": "baht",
+    "transcription": "",
+    "description": "счастливый - bahtli",
+    "category": "Семья",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/5vs5ZYv/adorable-baby-blur-boy-294173.jpg"
+  },
+  {
+    "id": 5,
+    "original": "горячий",
+    "translated": "sıcaq",
+    "transcription": "",
+    "description": "горячая пища - sıcaq aş",
+    "category": "Напитки",
+    "sound": "170.00",
+    "imageUrl": "https://i.ibb.co/BGFJVXd/person-cooking-in-pot-3298605.jpg"
+  }
+
+]
